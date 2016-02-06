@@ -1,5 +1,4 @@
-
-# Python2 stuff with Pip
+# Python 2.X modules/packages with pip
 
 pip install ipython Pillow virtualenv nose notebook
 
@@ -13,8 +12,12 @@ pip install Flask Django tornado
 
 pip install rdflib SPARQLWrapper
 
+pip list --outdated  #to find packages that are out of date
 
-# Python3 stuff with Pip
+#pip install -U package1 package2 ...  #manually update outdated packages
+
+
+# Python 3.X modules/packages with pip3
 
 pip3 install ipython Pillow virtualenv nose notebook
 
@@ -27,3 +30,7 @@ pip3 install html5lib cssselect pyquery lxml BeautifulSoup
 pip3 install Flask Django tornado
 
 pip3 install rdflib SPARQLWrapper
+
+pip3 list --outdated  #to find packages that are out of date
+
+#pip3 install -U package1 package2 ...  #manually update outdated packages
