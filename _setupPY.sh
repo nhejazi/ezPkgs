@@ -1,4 +1,4 @@
-# Python 2.X modules/packages with pip
+# Python 2.7 modules/packages with pip
 
 pip install ipython Pillow virtualenv nose notebook jupyter
 
@@ -19,7 +19,7 @@ pip list --outdated  #to find packages that are out of date
 #pip install -U package1 package2 ...  #manually update outdated packages
 
 
-# Python 3.X modules/packages with pip3
+# Python 3.5+ modules/packages with pip3
 
 pip3 install ipython Pillow virtualenv nose notebook jupyter
 
