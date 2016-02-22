@@ -1,4 +1,4 @@
-# getPkgs ~ _convenient setup of packages for my core tools_
+# getPkgs ~ _easy setup of packages for my tools_
 
 To set up useful package libraries for Python, Julia, R, and the Atom editor, use the following:
 
