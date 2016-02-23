@@ -202,7 +202,7 @@ Pkg.add("SortingAlgorithms")
 
 Pkg.add("StatsBase")
 
-Pkg.add("StatsFuns)
+Pkg.add("StatsFuns")
 
 Pkg.add("TexExtensions")
 
