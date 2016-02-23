@@ -8,6 +8,7 @@ To set up useful package libraries for Python, Julia, R, and the Atom editor, us
 4. `sh _setupAtom.sh` (uses `apm`)
 
 to set up the R kernel for Jupyter notebooks, in a new terminal session: 
+
 `jupyter kernelspec install --replace --name ir --user Library/Frameworks/R.framework/Versions/3.1/Resources/library/IRkernel/kernelspec`
 
 N.B., for these scripts to work as intended, base installations of these tools must be performed in advance.
