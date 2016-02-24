@@ -2,7 +2,7 @@
 
 pip install ipython Pillow virtualenv nose notebook jupyter xonsh
 
-pip install numpy scipy pandas scikit-learn seaborn mayavi
+pip install numpy scipy pandas scikit-learn seaborn mayavi plotly
 
 pip install nltk sympy q snakeviz networkx cloud
 
@@ -23,7 +23,7 @@ pip list --outdated  #to find packages that are out of date
 
 pip3 install ipython Pillow virtualenv nose notebook jupyter xonsh
 
-pip3 install numpy scipy pandas scikit-learn seaborn mayavi
+pip3 install numpy scipy pandas scikit-learn seaborn mayavi plotly
 
 pip3 install nltk sympy q snakeviz networkx cloud
 
