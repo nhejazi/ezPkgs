@@ -6,10 +6,10 @@ install.packages(c('car','tidyr','dplyr','pryr','ggplot2','randomForest',
                    'caret','shiny','xtable','pander','devtools','zoo','xts',
                    'quantmod','data.table','Rcpp','parallel','testthat',
                    'roxygen2','foreign','ade4','scatterplot3d','Rcurl','DBI',
-                   'RMySQL','impute','fastICA','e1071','reshape2',
-                   'RColorBrewer','neuralnet','nnet','RSNNS',
-                   'clusterGeneration','tmle','ltmle','selectiveInference',
-                   'htmltools','yaml','knitr','shiny','rmarkdown'),
+                   'RMySQL','impute','fastICA','e1071','reshape2','lintr',
+                   'RColorBrewer','neuralnet','nnet','clusterGeneration',
+                   'RSNNS','tmle','ltmle','selectiveInference','knitr',
+                   'htmltools','yaml','shiny','rmarkdown'),
                  repos='https://cran.cnr.berkeley.edu/')
 
 # for GitHub packages
@@ -24,7 +24,7 @@ biocLite(c("made4","hgu133plus2","hgu133plus2cdf","hgu133plus2probe","Heatplus"
            ,"biomaRt","limma","affy","bsseq"))
 
 # for Jupyter R kernel (not working yet...)
-#install.packages(c('rzmq','repr','IRkernel','IRdisplay'),
-#                 repos = c('http://irkernel.github.io/', getOption('repos')), 
-#                 type = 'source')
-#IRkernel::installspec(user = FALSE)
+install.packages(c('rzmq','repr','IRkernel','IRdisplay'),
+                 repos = c('http://irkernel.github.io/', getOption('repos')), 
+                 type = 'source')
+IRkernel::installspec(user = FALSE)
