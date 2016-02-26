@@ -2,13 +2,10 @@
 
 To set up useful package libraries for Python, Julia, R, and the Atom editor, use the following:
 
-1. `sh _setupPython.sh` (uses `pip`)
-2. `julia _setupJulia.jl`
-3. `R CMD BATCH _setupR.R _setupR.Rout; rm _setupR.Rout`
-4. `sh _setupAtom.sh` (uses `apm`)
-
-to set up the R kernel for Jupyter notebooks, in a new terminal session: 
-
-`jupyter kernelspec install --replace --name ir --user Library/Frameworks/R.framework/Versions/3.1/Resources/library/IRkernel/kernelspec`
+1. `sh _setupAtom.sh` (uses Atom's `apm`)
+2. `R CMD BATCH _setupR.R _setupR.Rout; rm _setupR.Rout`
+3. `python _pythonSetup.py` (to update packages, use `python _pythonUpdate.py`
+4. `python3 _pythonSetup.py` (to update packages, use `python3 _pythonUpdate.py`
+5. `julia _setupJulia.jl`
 
 N.B., for these scripts to work as intended, base installations of these tools must be performed in advance.
