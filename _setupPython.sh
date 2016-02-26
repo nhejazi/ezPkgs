@@ -1,6 +1,6 @@
 # Python 2.7 modules/packages with pip
 
-pip install ipython Pillow virtualenv nose notebook jupyter xonsh
+pip install ipython Pillow virtualenv nose notebook jupyter
 
 pip install numpy scipy pandas scikit-learn seaborn mayavi plotly
 
