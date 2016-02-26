@@ -8,4 +8,4 @@ To set up useful package libraries for Python, Julia, R, and the Atom editor, us
 4. `python3 _pythonSetup.py` (to update packages, use `python3 _pythonUpdate.py`
 5. `julia _juliaSetup.jl`
 
-N.B., for these scripts to work as intended, base installations of these tools must be performed in advance.
+N.B., for these scripts to work as intended, _base installations of these tools must be performed in advance._
