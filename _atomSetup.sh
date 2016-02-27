@@ -1,3 +1,5 @@
+#!/usr/bin/bash
+
 apm install activate-power-mode an-old-hope-syntax ask-stack atom-macros atom-pair atomatigit
 
 apm install autocomplete-julia autocomplete-paths autocomplete-python autocomplete-ruby
