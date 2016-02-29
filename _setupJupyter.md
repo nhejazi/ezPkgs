@@ -7,13 +7,14 @@
 - Available Jupyter kernels may also be accessed via other consoles from the command line:
   1. `jupyter qtconsole --kernel=X`
   2. `jupyter console --kernel=X`
+  
   where X = ir (for R), X = ijulia (for Julia, X = ipykernel (for Python2), X = ipykernel3 (for Python3).
 
 ## [Python 2 vs. 3: A Problem of Multiple Kernels](https://ipython.readthedocs.org/en/latest/install/kernel_install.html)
 - `pip3 install jupyter` creates a functional Python3 kernel for Jupyter
 - Unfortunately, setting up an equivalently functional Python2 kernel takes a bit more work:
-  1. python -m pip install ipykernel
-  2. python -m ipykernel install --user
+  1. `python -m pip install ipykernel`
+  2. `python -m ipykernel install --user`
 - The above adds a Python2 kernel when Jupyter's primary Python kernel is Python3
 - Presumably, this can be adjusted such that a Python3 kernel would be set up if Python2 was main...
 
