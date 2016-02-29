@@ -1,4 +1,6 @@
-# Instructions for set up and use of Jupyter kernels for Python2, Python3, R, Julia
+# Jupyter kernels for Python2, Python3, R, Julia
+
+What follows are instructions for the set up and use of Jupyter kernels for the core languages of data analysis.
 
 ## Using the Jupyter notebook with multiple kernels
 - After installation of the desired kernels, all can be accessed via the browser:
@@ -8,7 +10,7 @@
   1. `jupyter qtconsole --kernel=X`
   2. `jupyter console --kernel=X`
   
-  where X = ir (for R), X = ijulia (for Julia, X = ipykernel (for Python2), X = ipykernel3 (for Python3).
+  where X = ir (for R), X = ijulia (for Julia), X = ipykernel (for Python2), X = ipykernel3 (for Python3).
 
 ## [Python 2 vs. 3: A Problem of Multiple Kernels](https://ipython.readthedocs.org/en/latest/install/kernel_install.html)
 - `pip3 install jupyter` creates a functional Python3 kernel for Jupyter
