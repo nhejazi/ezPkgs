@@ -8,5 +8,6 @@ To set up useful package libraries for Python, Julia, R, and the Atom editor, us
 4. for Python v3.4+: `python3 _pythonSetup.py` (to update packages, use `python3 _pythonUpdate.py`)
 5. for Julia v4.3+: `julia _juliaSetup.jl`
 6. download and install the [Xonsh shell](https://github.com/scopatz/xonsh.git).
+7. set up Jupyter kernels using instructions in `_setupJupyter.md`
 
 N.B., for these scripts to work as intended, _base installations of these tools must be performed in advance._
