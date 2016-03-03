@@ -1,56 +1,60 @@
 ## install Julia packages and iJulia kernel for Jupyter
 
-Pkg.add("ASCIIPlots")
+pkgs_progs = ["Atom","AWS","Blink","Bokeh","Codetools","Compat","DevTools","GitHub","Homebrew","IJulia","Jewel",
+              "LaTeXStrings","Markdown","TeXExtensions","PyCall","RCall","Lazy","LibCURL","MacroTools","ZMQ"]
 
-Pkg.add("AWS")
+pkgs_maths = ["ArrayViews","Calculus","Cartesian","Distances","DualNumbers","ForwardDiff","Measures","NLopt",
+              "NaNMath","Optim","Polynomials","WaveletMatrices","Wavelets","WoodburyMatrices"]
 
-Pkg.add("ArrayViews")
+pkgs_plots = ["ASCIIPlots","Cairo","Gadfly","Gaston","PyPlot","Winston"]
 
-Pkg.add("Atom")
+pkgs_stats = ["AverageShiftedHistograms","BinDeps","Bootstrap","CovarianceMatrices","DimensionalityReduction",
+              "Distributions","FixedEffectModels","GLM","GLMNet","GaussianMixtures","HypothesisTests","KLDivergence",
+              "KernSmooth","KernelDensity","KernelEstimator","LARS","Lasso","Loess","MCMC","MixedModels",
+              "MultivariateStats","RDatasets","StatsBase","StatsFuns","SmoothingKernels","TimeData","TimeModels",
+              "TimeSeries","CauseMap","Clustering","DecisionTree","IntervalTrees","MLBase","MachineLearning"]
 
-Pkg.add("AverageShiftedHistograms")
+pkgs_datas = ["BufferedStreams","CSV","DataArrays","DataFrames","DataStreams","DataStructures","JSON","Images",
+              "ImmutableArrays","IntArrays","NullableArrays"]
 
-Pkg.add("BinDeps")
+pkgs_miscs = ["Calendar","ColorBrewer","ColorTypes","ColorVectorSpace","Colors","Dates","Nettle"]
 
-Pkg.add("Bio")
+pkgs_bioin = ["Bio","BioSeq"]
 
-Pkg.add("BioSeq")
 
-Pkg.add("Blink")
+# install packages iteratively from thematic lists
+for progs=1:length(pkgs_progs)
+  Pkg.add(pkgs_progs[progs])
+end
+
+for maths=1:length(pkgs_maths)
+  Pkg.add(pkgs_maths[maths])
+end
+
+for plots=1:length(pkgs_plots)
+  Pkg.add(pkgs_plots[plots])
+end
+
+for stats=1:length(pkgs_stats)
+  Pkg.add(pkgs_stats[stats])
+end
+
+for datas=1:length(pkgs_datas)
+  Pkg.add(pkgs_datas[datas])
+end
+
+for miscs=1:length(pkgs_miscs)
+  Pkg.add(pkgs_miscs[miscs])
+end
+
+for bioin=1:length(pkgs_bioin)
+  Pkg.add(pkgs_bioin[bioin])
+end
+
+
+### packages that need categorization follow
 
 Pkg.add("Blosc")
-
-Pkg.add("Bokeh")
-
-Pkg.add("Bootstrap")
-
-Pkg.add("BufferedStreams")
-
-Pkg.add("CSV")
-
-Pkg.add("Cairo")
-
-Pkg.add("Calculus")
-
-Pkg.add("Calendar")
-
-Pkg.add("Cartesian")
-
-Pkg.add("CauseMap")
-
-Pkg.add("Clustering")
-
-Pkg.add("CodeTools")
-
-Pkg.add("ColorBrewer")
-
-Pkg.add("ColorTypes")
-
-Pkg.add("ColorVectorSpace")
-
-Pkg.add("Colors")
-
-Pkg.add("Compat")
 
 Pkg.add("Compose")
 
@@ -58,35 +62,11 @@ Pkg.add("Conda")
 
 Pkg.add("Contour")
 
-Pkg.add("CovarianceMatrices")
-
 Pkg.add("Cubature")
-
-Pkg.add("DataArrays")
-
-Pkg.add("DataFrames")
-
-Pkg.add("DataStreams")
-
-Pkg.add("DataStructures")
-
-Pkg.add("Dates")
-
-Pkg.add("DecisionTree")
-
-Pkg.add("DevTools")
 
 Pkg.add("Devectorize")
 
-Pkg.add("DimensionalityReduction")
-
-Pkg.add("Distances")
-
-Pkg.add("Distributions")
-
 Pkg.add("Docile")
-
-Pkg.add("DualNumbers")
 
 Pkg.add("FMIndexes")
 
@@ -94,23 +74,7 @@ Pkg.add("FactCheck")
 
 Pkg.add("FileIO")
 
-Pkg.add("FixedEffectModels")
-
 Pkg.add("FixedPointNumbers")
-
-Pkg.add("ForwardDiff")
-
-Pkg.add("GLM")
-
-Pkg.add("GLMNet")
-
-Pkg.add("Gadfly")
-
-Pkg.add("Gaston")
-
-Pkg.add("GaussianMixtures")
-
-Pkg.add("GitHub")
 
 Pkg.add("Grid")
 
@@ -118,108 +82,10 @@ Pkg.add("Hexagons")
 
 Pkg.add("Hiccup")
 
-Pkg.add("Homebrew")
-
-Pkg.add("HypothesisTests")
-
-Pkg.add("IJulia")
-
-Pkg.add("Images")
-
-Pkg.add("ImmutableArrays")
-
-Pkg.add("IntArrays")
-
-Pkg.add("IntervalTrees")
-
-Pkg.add("JSON")
-
-Pkg.add("Jewel")
-
-Pkg.add("KLDivergence")
-
-Pkg.add("KernSmooth")
-
-Pkg.add("KernelDensity")
-
-Pkg.add("KernelEstimator")
-
-Pkg.add("LARS")
-
-Pkg.add("LaTeXStrings")
-
-Pkg.add("Lasso")
-
-Pkg.add("Lazy")
-
-Pkg.add("LibCURL")
-
-Pkg.add("Loess")
-
-Pkg.add("MCMC")
-
-Pkg.add("MLBase")
-
-Pkg.add("MacroTools")
-
-Pkg.add("Markdown")
-
-Pkg.add("MachineLearning")
-
-Pkg.add("Measures")
-
-Pkg.add("MixedModels")
-
-Pkg.add("MultivariateStats")
-
-Pkg.add("NLopt")
-
-Pkg.add("NaNMath")
-
-Pkg.add("Nettle")
-
-Pkg.add("NullableArrays")
-
 Pkg.add("NumericFuns")
-
-Pkg.add("Optim")
 
 Pkg.add("PDMats")
 
-Pkg.add("Polynomials")
-
-Pkg.add("PyCall")
-
-Pkg.add("PyPlot")
-
-Pkg.add("RCall")
-
-Pkg.add("RDatasets")
-
-Pkg.add("SmoothingKernels")
-
 Pkg.add("SortingAlgorithms")
 
-Pkg.add("StatsBase")
-
-Pkg.add("StatsFuns")
-
-Pkg.add("TexExtensions")
-
-Pkg.add("TimeData")
-
-Pkg.add("TimeModels")
-
-Pkg.add("TimeSeries")
-
-Pkg.add("WaveletMatrices")
-
-Pkg.add("Wavelets")
-
-Pkg.add("Winston")
-
-Pkg.add("WoodburyMatrices")
-
 Pkg.add("Yeppp")
-
-Pkg.add("ZMQ")
