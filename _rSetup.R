@@ -9,7 +9,7 @@ install.packages(c('car','tidyr','dplyr','pryr','ggplot2','randomForest',
                    'RMySQL','impute','fastICA','e1071','reshape2','lintr',
                    'RColorBrewer','neuralnet','nnet','clusterGeneration',
                    'RSNNS','tmle','ltmle','selectiveInference','knitr',
-                   'htmltools','yaml','shiny','rmarkdown'),
+                   'htmltools','yaml','shiny','rmarkdown','png','stringi'),
                  repos='https://cran.cnr.berkeley.edu/')
 
 # for GitHub packages
