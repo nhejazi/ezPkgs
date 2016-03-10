@@ -18,19 +18,14 @@ pkgs_stats = ["AverageShiftedHistograms","BinDeps","Bootstrap","CovarianceMatric
               "MultivariateStats","RDatasets","StatsBase","StatsFuns","SmoothingKernels","TimeData","TimeModels",
               "TimeSeries","CauseMap","Clustering","DecisionTree","IntervalTrees","MLBase","MachineLearning"]
 
-# packages for importing and managing data
-pkgs_datas = ["BufferedStreams","CSV","DataArrays","DataFrames","DataStreams","DataStructures","JSON","Images",
-              "ImmutableArrays","IntArrays","NullableArrays","FileIO","Hiccup"]
-
-# packages for plotting data and graphics
-pkgs_plots = ["ASCIIPlots","Cairo","Gadfly","Gaston","PyPlot","Winston"]
+# packages for data science and data visualization
+pkgs_datsc = ["BufferedStreams","CSV","DataArrays","DataFrames","DataStreams","DataStructures","JSON","Images",
+              "ImmutableArrays","IntArrays","NullableArrays","FileIO","Hiccup","ASCIIPlots","Cairo","Gadfly",
+              "Gaston","PyPlot","Winston"]
 
 # packages for miscellaneous operations
 pkgs_miscs = ["Calendar","ColorBrewer","ColorTypes","ColorVectorSpace","Colors","Compose","Dates","Nettle","Devectorize",
-              "Docile","FMIndexes","FactCheck","FixedPointNumbers","SortingAlgorithms","Yeppp"]
-
-# packages for bioinformatics
-pkgs_bioin = ["Bio","BioSeq"]
+              "Docile","FMIndexes","FactCheck","FixedPointNumbers","SortingAlgorithms","Yeppp","Bio","BioSeq","Atom"]
 
 
 # install packages iteratively from thematic lists above
@@ -42,22 +37,14 @@ for maths=1:length(pkgs_maths)
   Pkg.add(pkgs_maths[maths])
 end
 
-for plots=1:length(pkgs_plots)
-  Pkg.add(pkgs_plots[plots])
-end
-
 for stats=1:length(pkgs_stats)
   Pkg.add(pkgs_stats[stats])
 end
 
-for datas=1:length(pkgs_datas)
-  Pkg.add(pkgs_datas[datas])
+for datas=1:length(pkgs_datsc)
+  Pkg.add(pkgs_datas[datsc])
 end
 
 for miscs=1:length(pkgs_miscs)
   Pkg.add(pkgs_miscs[miscs])
-end
-
-for bioin=1:length(pkgs_bioin)
-  Pkg.add(pkgs_bioin[bioin])
 end
