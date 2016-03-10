@@ -25,7 +25,7 @@ pkgs_datsc = ["BufferedStreams","CSV","DataArrays","DataFrames","DataStreams","D
 
 # packages for miscellaneous operations
 pkgs_miscs = ["Calendar","ColorBrewer","ColorTypes","ColorVectorSpace","Colors","Compose","Dates","Nettle","Devectorize",
-              "Docile","FMIndexes","FactCheck","FixedPointNumbers","SortingAlgorithms","Yeppp","Bio","BioSeq","Atom"]
+              "Docile","FMIndexes","FactCheck","FixedPointNumbers","SortingAlgorithms","Yeppp","Bio","BioSeq"]
 
 
 # install packages iteratively from thematic lists above
