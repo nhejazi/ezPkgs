@@ -15,3 +15,5 @@ apm install language-r language-scala linter linter-lintr linter-pylint linter-l
 apm install minimap minimap-find-and-replace minimap-git-diff minimap-highlight-selected minimap-pigments minimap-selection
 
 apm install octocat-syntax open-github-from-npm pigments project-manager r-exec remote-edit script travis-ci-status vim-mode
+
+apm install ink julia-client latex-completions
