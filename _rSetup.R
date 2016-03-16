@@ -15,8 +15,8 @@ install.packages(c('car','tidyr','dplyr','pryr','ggplot2','randomForest',
 
 # for GitHub packages
 devtools::install_github("hadley/staticdocs")
-devtools::install_github('ramnathv/slidify')
-devtools::install_github('ramnathv/slidifyLibraries')
+devtools::install_github(c("ramnathv/slidify","ramnathv/slidifyLibraries"))
+devtools::install_github("nhejazi/nima")
 
 # for Bioconductor packages
 source("http://www.bioconductor.org/biocLite.R")
