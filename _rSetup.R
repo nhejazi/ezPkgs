@@ -21,8 +21,9 @@ devtools::install_github('ramnathv/slidifyLibraries')
 # for Bioconductor packages
 source("http://www.bioconductor.org/biocLite.R")
 biocLite()
-biocLite(c("made4","hgu133plus2","hgu133plus2cdf","hgu133plus2probe","Heatplus"
-           ,"biomaRt","limma","affy","bsseq"))
+biocLite(c("made4","hgu133plus2","hgu133plus2cdf","hgu133plus2probe","gwascat",
+           "Heatplus","biomaRt","limma","affy","bsseq","ggbio",
+           "TxDb.Hsapiens.UCSC.hg18.knownGene"))
 
 # for Jupyter R kernel (not working yet...)
 install.packages(c('rzmq','repr','IRkernel','IRdisplay'),
