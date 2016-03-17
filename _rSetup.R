@@ -21,7 +21,7 @@ devtools::install_github("nhejazi/nima")
 # for Bioconductor packages
 source("http://www.bioconductor.org/biocLite.R")
 biocLite()
-biocLite(c("made4","hgu133plus2","hgu133plus2cdf","hgu133plus2probe","gwascat",
+biocLite(c("made4","hgu133plus2cdf","hgu133plus2probe","gwascat",
            "Heatplus","biomaRt","limma","affy","bsseq","ggbio",
            "TxDb.Hsapiens.UCSC.hg18.knownGene"))
 
