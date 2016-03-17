@@ -23,7 +23,7 @@ source("http://www.bioconductor.org/biocLite.R")
 biocLite()
 biocLite(c("made4","hgu133plus2cdf","hgu133plus2probe","gwascat",
            "Heatplus","biomaRt","limma","affy","bsseq","ggbio",
-           "TxDb.Hsapiens.UCSC.hg18.knownGene"))
+           "TxDb.Hsapiens.UCSC.hg18.knownGene","rtracklayer"))
 
 # for Jupyter R kernel (not working yet...)
 install.packages(c('rzmq','repr','IRkernel','IRdisplay'),
