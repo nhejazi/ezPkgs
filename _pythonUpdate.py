@@ -5,7 +5,7 @@ def upgrade(packages):
         pip.main(['install','--upgrade',packages[x]])
 
 # Example
-core = ('ipython','Pillow','virtualenv','nose','notebook','jupyter','pylint')
+core = ('ipython','Pillow','virtualenv','nose','notebook','jupyter','pylint','xonsh')
 basesci = ('numpy','scipy','pandas','scikit-learn','matplotlib','seaborn','plotly')
 basemath = ('nltk','sympy','q','snakeviz','networkx','cloud')
 internet = ('html5lib','cssselect','pyquery','lxml','BeautifulSoup')
