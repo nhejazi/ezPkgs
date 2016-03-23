@@ -1,4 +1,5 @@
-# getPkgs ~ _easy package setup for (my) core tools_
+# ezPkgs
+> Easy Package Setup for (My) Core Tools
 
 To set up useful package libraries for Python, Julia, R, and the Atom editor, use the following:
 
