@@ -10,7 +10,7 @@ install.packages(c('car','tidyr','dplyr','pryr','ggplot2','randomForest',
                    'RColorBrewer','neuralnet','nnet','clusterGeneration',
                    'RSNNS','tmle','ltmle','selectiveInference','knitr',
                    'htmltools','yaml','shiny','rmarkdown','png','stringi',
-                   'gridExtra','rversions'),
+                   'gridExtra','rversions','R.devices','future'),
                  repos='https://cran.cnr.berkeley.edu/')
 
 # for GitHub packages
