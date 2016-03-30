@@ -1,6 +1,7 @@
 # Jupyter kernels for data science (Python, R, Julia)
 
-> Setting up Jupyter kernels for data analysis (with Python2, Python3, R, Julia)
+> Setting up Jupyter kernels for the core languages of data analysis/science
+> (with Python2, Python3, R, and Julia)
 
 ## Using the Jupyter notebook with multiple kernels
 - After installation of the desired kernels, all can be accessed via the 
@@ -15,11 +16,10 @@
   command line:
 
   * `jupyter qtconsole --kernel=X` or `jupyter console --kernel=X`
-  * $ X \in \{ir, ijulia, ipykernel2, ipykernel3\} $ to access kernels for R,
+  * for X in {ir, ijulia, ipykernel2, ipykernel3} to access kernels for R, 
     Julia, Python2, and Python3, respectively.
   
-## [Python 2 vs. 3: A Problem of Multiple 
-   Kernels](https://ipython.readthedocs.org/en/latest/install/kernel_install.html)
+## [Python 2 vs. 3: A Problem of Multiple Kernels](https://ipython.readthedocs.org/en/latest/install/kernel_install.html)
 
 - Set up Jupyter and the notebook interface by running`pip3 install jupyter` and
   `pip3 install notebook` (repeat this step using `pip2` to set up in Python2).
@@ -36,8 +36,8 @@
      * `pip2 install ipykernel`
      * `python2 -m ipykernel.kernelspec --user`
 
-- The instructions given for setting up the python kernels are adapted from 
-  [this GitHub issue](https://github.com/jupyter/jupyter/issues/52).
+- __The instructions given for setting up the python kernels are adapted from 
+  [this GitHub issue](https://github.com/jupyter/jupyter/issues/52).__
 
 ## [An R kernel for Jupyter notebooks](http://irkernel.github.io/installation/)
 
@@ -45,8 +45,8 @@
 
   1. `install.packages(c('rzmq','repr','IRkernel','IRdisplay'), 
      repos = c('http://irkernel.github.io/', getOption('repos')))`
-  2. `IRkernel::installspec()`; note that on Mac OSX this must be used on an R 
-     session started from the terminal.
+  2. `IRkernel::installspec()` (n.b., on Mac OSX this must be done within an R 
+     session started from the terminal.)
 
 - To update the IRkernel package, within R:
 
