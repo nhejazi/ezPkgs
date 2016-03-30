@@ -1,44 +1,63 @@
-# Jupyter kernels for Python2, Python3, R, Julia
+# Jupyter kernels for data science (Python, R, Julia)
 
-What follows are instructions for the set up and use of Jupyter kernels for the core languages of data analysis.
+> Setting up Jupyter kernels for data analysis (with Python2, Python3, R, Julia)
 
 ## Using the Jupyter notebook with multiple kernels
-- After installation of the desired kernels, all can be accessed via the browser:
+- After installation of the desired kernels, all can be accessed via the 
+  browser:
 
-  1. `jupyter notebook`
-  2. After the browser launches, select a kernel from the drop down menu in the top right.
+  * `jupyter notebook` (point browser to `http://localhost:8888/` if using
+    `jupyter notebook --no-browser`)
+  * After the browser launches, select a kernel from the drop down menu in the 
+    top right.
 
-- Available Jupyter kernels may also be accessed via other consoles from the command line:
+- Available Jupyter kernels may also be accessed via other consoles from the 
+  command line:
 
-  1. `jupyter qtconsole --kernel=X`
-  2. `jupyter console --kernel=X`
+  * `jupyter qtconsole --kernel=X` or `jupyter console --kernel=X`
+  * $ X \in \{ir, ijulia, ipykernel2, ipykernel3\} $ to access kernels for R,
+    Julia, Python2, and Python3, respectively.
   
-  where X = ir (for R), X = ijulia (for Julia), X = ipykernel (for Python2), X = ipykernel3 (for Python3).
+## [Python 2 vs. 3: A Problem of Multiple 
+   Kernels](https://ipython.readthedocs.org/en/latest/install/kernel_install.html)
 
-## [Python 2 vs. 3: A Problem of Multiple Kernels](https://ipython.readthedocs.org/en/latest/install/kernel_install.html)
-- `pip3 install jupyter` creates a functional Python3 kernel for Jupyter
-- Unfortunately, setting up an equivalently functional Python2 kernel takes a bit more work:
+- Set up Jupyter and the notebook interface by running`pip3 install jupyter` and
+  `pip3 install notebook` (repeat this step using `pip2` to set up in Python2).
 
-  1. `python -m pip install ipykernel`
-  2. `python -m ipykernel install --user`
+- Setting up an equivalently functional kernels for Python2 and Python3 requires
+  a bit of extra work (this has to do with Jupyter internally supporting both
+  Python2 and Python3, which will _likely change in the future_).
 
-- The above adds a Python2 kernel when Jupyter's primary Python kernel is Python3
-- Presumably, this can be adjusted such that a Python3 kernel would be set up if Python2 was main...
+  1. To set up the ipython kernel for Python3:
+     * `pip3 install ipykernel`
+     * `python3 -m ipykernel.kernelspec --user`
+
+  2. To set up the ipython kernel for Python2:
+     * `pip2 install ipykernel`
+     * `python2 -m ipykernel.kernelspec --user`
+
+- The instructions given for setting up the python kernels are adapted from 
+  [this GitHub issue](https://github.com/jupyter/jupyter/issues/52).
 
 ## [An R kernel for Jupyter notebooks](http://irkernel.github.io/installation/)
+
 - To install the appropriate dependencies, within R:
 
-  1. `install.packages(c('rzmq','repr','IRkernel','IRdisplay'), repos = c('http://irkernel.github.io/', getOption('repos')))`
-  2. `IRkernel::installspec()`; note that on Mac OSX this must be used on an R session started from the terminal.
+  1. `install.packages(c('rzmq','repr','IRkernel','IRdisplay'), 
+     repos = c('http://irkernel.github.io/', getOption('repos')))`
+  2. `IRkernel::installspec()`; note that on Mac OSX this must be used on an R 
+     session started from the terminal.
 
 - To update the IRkernel package, within R:
 
-  1.`update.packages(repos = c('http://irkernel.github.io/', getOption('repos')))`
+  * `update.packages(repos = c('http://irkernel.github.io/', 
+    getOption('repos')))`
 
 ## [A Julia kernel for Jupyter notebooks](https://github.com/JuliaLang/IJulia.jl)
+
 - To install, within Julia, the following will suffice:
 
-  1. `Pkg.add("IJulia")`
+  * `Pkg.add("IJulia")`
 
 - To update the IJulia kernel, the following steps are necessary:
 
