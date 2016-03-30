@@ -5,8 +5,10 @@ def install(packages):
         pip.main(['install',packages[x]])
 
 # Example
-core = ('ipython','Pillow','virtualenv','nose','notebook','jupyter','pylint','xonsh')
-basesci = ('numpy','scipy','pandas','scikit-learn','matplotlib','seaborn','plotly')
+core = ('ipython','Pillow','virtualenv','nose','pylint','jupyter',
+        'notebook','xonsh')
+basesci = ('numpy','scipy','pandas','scikit-learn','matplotlib','seaborn',
+           'plotly')
 basemath = ('nltk','sympy','q','snakeviz','networkx','cloud')
 internet = ('awscli','html5lib','cssselect','pyquery','lxml','BeautifulSoup')
 otherstuff = ('Flask','Django','tornado','rdflib','SPARQLWrapper')
