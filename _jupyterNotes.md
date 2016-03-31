@@ -16,8 +16,9 @@
   command line:
 
   * `jupyter qtconsole --kernel=X` or `jupyter console --kernel=X`
-  * for X in {ir, ijulia, ipykernel2, ipykernel3} to access kernels for R, 
+  * for X in {ir, julia-ver, python2, python3} to access kernels for R, 
     Julia, Python2, and Python3, respectively.
+  * on OS X, the list of kernels should appear in `~/Library/Jupyter/kernels`
   
 ## [Python 2 vs. 3: A Problem of Multiple Kernels](https://ipython.readthedocs.org/en/latest/install/kernel_install.html)
 
