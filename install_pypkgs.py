@@ -6,7 +6,7 @@ def install(packages):
 
 # Example
 core = ('ipython','Pillow','virtualenv','nose','pylint','jupyter',
-        'notebook','xonsh')
+        'notebook','xonsh','neovim')
 basesci = ('numpy','scipy','pandas','scikit-learn','matplotlib','seaborn',
            'plotly')
 basemath = ('nltk','sympy','q','snakeviz','networkx','cloud')
