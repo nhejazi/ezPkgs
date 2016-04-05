@@ -1,5 +1,5 @@
 # ezPkgs
-> Easy Package Setup for (My) Core Tools
+> Package Setup for R, Julia, Python, and Atom (editor) Made Eazy
 
 To set up useful package libraries for Python, Julia, R, and the Atom editor, 
 use the following:
