@@ -7,17 +7,17 @@ def install(packages):
 # Example
 core = ('ipython','Pillow','virtualenv','nose','pylint','jupyter',
         'notebook','xonsh','neovim')
-basesci = ('numpy','scipy','pandas','scikit-learn','matplotlib','seaborn',
-           'plotly')
-basemath = ('nltk','sympy','q','snakeviz','networkx','cloud')
-internet = ('awscli','html5lib','cssselect','pyquery','lxml','BeautifulSoup')
-otherstuff = ('Flask','Django','tornado','rdflib','SPARQLWrapper')
-neurosci = ('nibabel','nipy','nitime','nilearn')
+stat = ('numpy','scipy','pandas','scikit-learn','matplotlib','seaborn',
+        'plotly','statsmodels')
+math = ('nltk','sympy','q','snakeviz','networkx','cloud')
+web = ('awscli','html5lib','cssselect','pyquery','lxml','BeautifulSoup')
+misc = ('Flask','Django','tornado','rdflib','SPARQLWrapper')
+neuro = ('nibabel','nipy','nitime','nilearn')
 
 if __name__ == '__main__':
     install(core)
-    install(basesci)
-    install(basemath)
-    install(internet)
-    install(otherstuff)
-    install(neurosci)
+    install(stat)
+    install(math)
+    install(web)
+    install(misc)
+    install(neuro)
