@@ -22,7 +22,9 @@ _Supplementary_:
    provided.
 
 N.B., for these scripts to work as intended, _base installations of these tools 
-must be performed in advance._
+must be performed in advance:_ (1) For setup on Mac OS X, see 
+[freshOSX](https://github.com/nhejazi/freshOSX); and (2) for setup on Linux
+Ubuntu, see [freshUbuntu](https://github.com/nhejazi/freshUbuntu).
 
 ---
 
