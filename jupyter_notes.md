@@ -30,29 +30,34 @@
   Python2 and Python3, which will _likely change in the future_).
 
   1. To set up the ipython kernel for Python3:
-     * `pip3 install ipykernel`
-     * `python3 -m ipykernel.kernelspec --user`
+     ```bash
+     pip3 install ipykernel
+     python3 -m ipykernel.kernelspec --user
+     ```
 
   2. To set up the ipython kernel for Python2:
-     * `pip2 install ipykernel`
-     * `python2 -m ipykernel.kernelspec --user`
+     ```bash
+     pip2 install ipykernel
+     python2 -m ipykernel.kernelspec --user
+     ```
 
-- __The instructions given for setting up the python kernels are adapted from 
+- __These instructions given for setting up the python kernels are adapted from 
   [this GitHub issue](https://github.com/jupyter/jupyter/issues/52).__
 
 ## [An R kernel for Jupyter notebooks](http://irkernel.github.io/installation/)
 
 - To install the appropriate dependencies, within R:
-
-  1. `install.packages(c('rzmq','repr','IRkernel','IRdisplay'), 
-     repos = c('http://irkernel.github.io/', getOption('repos')))`
-  2. `IRkernel::installspec()` (n.b., on Mac OSX this must be done within an R 
-     session started from the terminal.)
+```R
+install.packages(c("rzmq","repr","IRkernel","IRdisplay"), 
+                repos = c("http://irkernel.github.io/", getOption("repos")))
+IRkernel::installspec()
+```
+n.b., on Mac OSX this must be done within an R session started from the terminal.
 
 - To update the IRkernel package, within R:
-
-  * `update.packages(repos = c('http://irkernel.github.io/', 
-    getOption('repos')))`
+```R
+update.packages(repos = c("http://irkernel.github.io/", getOption("repos")))
+```
 
 ## [A Julia kernel for Jupyter notebooks](https://github.com/JuliaLang/IJulia.jl)
 
@@ -61,18 +66,20 @@
   * `Pkg.add("IJulia")`
 
 - To update the IJulia kernel, the following steps are necessary:
-
-  1. `Pkg.update()`
-  2. `Pkg.build("IJulia")`
+```Julia
+Pkg.update()
+Pkg.build("IJulia")
+```
 
 - To start up the Jupyter notebook from within Julia:
-
-  1. `using IJulia`
-  2. `notebook()`
+```Julia
+using IJulia
+notebook()
+```
 
 ## [A Torch kernel for Jupyter notebooks](https://github.com/facebook/iTorch)
 
-- Torch is built off of Lua; to install from the command line [see here](https://github.com/torch/torch7/wiki/Cheatsheet#installing-and-running-torch):
+- Torch is built off of Lua; to install from the command line [see here](https://github.com/torch/torch7/wiki/Cheatsheet#installing-and-running-torch).
 
 - Add the iTorch kernel to Jupyter by using the following:
 ```bash
