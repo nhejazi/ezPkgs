@@ -4,13 +4,13 @@ cran_pkgs <- c('car', 'tidyr', 'dplyr', 'pryr', 'ggplot2', 'randomForest',
                'rgl', 'htmlwidgets', 'dygraphs', 'network3D', 'threeJS',
                'googleVis', 'mgcv', 'multcomp', 'vcd', 'glmnet', 'survival',
                'caret', 'shiny', 'xtable', 'pander', 'devtools', 'zoo', 'xts',
-               'quantmod', 'data.table', 'Rcpp', 'parallel', 'testthat',
+               'quantmod', 'data.table', 'Rcpp', 'parallel', 'testthat', 'lars',
                'roxygen2', 'foreign', 'ade4', 'scatterplot3d', 'Rcurl', 'DBI',
                'RMySQL', 'impute', 'fastICA', 'e1071', 'reshape2', 'lintr',
                'RColorBrewer', 'neuralnet', 'nnet', 'clusterGeneration',
                'RSNNS', 'tmle', 'ltmle', 'selectiveInference', 'knitr',
                'htmltools', 'yaml', 'shiny', 'rmarkdown', 'png', 'stringi',
-               'gridExtra', 'rversions', 'R.devices', 'future')
+               'gridExtra', 'rversions', 'R.devices', 'future', 'ElemStatLearn')
 
 bioc_pkgs <- c("GenomicRanges", "Gviz", "GenomicFeatures", "VariantAnnotation", 
                "rhdf5", "biomaRt", "limma", "affy", "bsseq", "ggbio", "made4", 
