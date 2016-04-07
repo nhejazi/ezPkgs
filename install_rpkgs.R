@@ -25,7 +25,7 @@ install.packages(cran_pkgs, repos = "https://cran.cnr.berkeley.edu/")
 
 # install packages from Bioconductor
 source("http://www.bioconductor.org/biocLite.R")
-biocLite(bio_pkgs)
+biocLite(bioc_pkgs)
 biocLite(ask = FALSE)
 
 # install packages from GitHub
