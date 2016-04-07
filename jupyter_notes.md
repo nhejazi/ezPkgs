@@ -1,7 +1,7 @@
-# Jupyter kernels for data science (Python, R, Julia)
+# Jupyter kernels for statistics and data science
 
 > Setting up Jupyter kernels for the core languages of data analysis/science
-> (with Python2, Python3, R, and Julia)
+> (with Python2, Python3, R, Julia, Torch)
 
 ## Using the Jupyter notebook with multiple kernels
 - After installation of the desired kernels, all can be accessed via the 
@@ -69,3 +69,14 @@
 
   1. `using IJulia`
   2. `notebook()`
+
+## [A Torch kernel for Jupyter notebooks](https://github.com/facebook/iTorch)
+
+- Torch is built off of Lua; to install from the command line [see here](https://github.com/torch/torch7/wiki/Cheatsheet#installing-and-running-torch):
+
+- Add the iTorch kernel to Jupyter by using the following:
+```bash
+git clone https://github.com/facebook/iTorch.git
+cd iTorch
+luarocks make
+```
