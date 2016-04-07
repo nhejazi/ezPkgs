@@ -21,7 +21,11 @@ github_pkgs <- c("hadley/staticdocs", "ramnathv/slidify",
                  "ramnathv/slidifyLibraries", "nhejazi/nima")
 
 # install packages from CRAN
-install.packages(cran_pkgs, repos = "https://cran.cnr.berkeley.edu/")
+if (Sys.info()["sysname"] == "Darwin") {
+  install.packages(cran_pkgs, repos = "https://cran.cnr.berkeley.edu/")
+} else {
+  install.packages(cran_pkgs, repos = "http://cran.cnr.berkeley.edu/")
+}
 
 # install packages from Bioconductor
 source("http://www.bioconductor.org/biocLite.R")
