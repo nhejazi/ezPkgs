@@ -47,17 +47,17 @@
 ## [An R kernel for Jupyter notebooks](http://irkernel.github.io/installation/)
 
 - To install the appropriate dependencies, within R:
-```R
-install.packages(c("rzmq","repr","IRkernel","IRdisplay"), 
-                repos = c("http://irkernel.github.io/", getOption("repos")))
-IRkernel::installspec()
-```
+  ```R
+  install.packages(c("rzmq","repr","IRkernel","IRdisplay"), 
+                   repos = c("http://irkernel.github.io/", getOption("repos")))
+  IRkernel::installspec()
+  ```
 n.b., on Mac OSX this must be done within an R session started from the terminal.
 
 - To update the IRkernel package, within R:
-```R
-update.packages(repos = c("http://irkernel.github.io/", getOption("repos")))
-```
+  ```R
+  update.packages(repos = c("http://irkernel.github.io/", getOption("repos")))
+  ```
 
 ## [A Julia kernel for Jupyter notebooks](https://github.com/JuliaLang/IJulia.jl)
 
@@ -66,24 +66,24 @@ update.packages(repos = c("http://irkernel.github.io/", getOption("repos")))
   * `Pkg.add("IJulia")`
 
 - To update the IJulia kernel, the following steps are necessary:
-```Julia
-Pkg.update()
-Pkg.build("IJulia")
-```
+  ```Julia
+  Pkg.update()
+  Pkg.build("IJulia")
+  ```
 
 - To start up the Jupyter notebook from within Julia:
-```Julia
-using IJulia
-notebook()
-```
+  ```Julia
+  using IJulia
+  notebook()
+  ```
 
 ## [A Torch kernel for Jupyter notebooks](https://github.com/facebook/iTorch)
 
 - Torch is built off of Lua; to install from the command line [see here](https://github.com/torch/torch7/wiki/Cheatsheet#installing-and-running-torch).
 
 - Add the iTorch kernel to Jupyter by using the following:
-```bash
-git clone https://github.com/facebook/iTorch.git
-cd iTorch
-luarocks make
-```
+  ```bash
+  git clone https://github.com/facebook/iTorch.git
+  cd iTorch
+  luarocks make
+  ```
