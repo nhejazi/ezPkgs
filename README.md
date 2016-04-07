@@ -23,3 +23,11 @@ _Supplementary_:
 
 N.B., for these scripts to work as intended, _base installations of these tools 
 must be performed in advance._
+
+---
+
+## License
+
+&copy; 2016 Nima Hejazi
+
+This repository is licensed under the MIT license. See `LICENSE` for details.
