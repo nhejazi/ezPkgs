@@ -10,7 +10,8 @@ cran_pkgs <- c('car', 'tidyr', 'dplyr', 'pryr', 'ggplot2', 'randomForest',
                'RColorBrewer', 'neuralnet', 'nnet', 'clusterGeneration',
                'RSNNS', 'tmle', 'ltmle', 'selectiveInference', 'knitr',
                'htmltools', 'yaml', 'shiny', 'rmarkdown', 'png', 'stringi',
-               'gridExtra', 'rversions', 'R.devices', 'future', 'ElemStatLearn')
+               'gridExtra', 'rversions', 'R.devices', 'future', 'ggthemes',
+               'ElemStatLearn')
 
 bioc_pkgs <- c("GenomicRanges", "Gviz", "GenomicFeatures", "VariantAnnotation", 
                "rhdf5", "biomaRt", "limma", "affy", "bsseq", "ggbio", "made4", 
