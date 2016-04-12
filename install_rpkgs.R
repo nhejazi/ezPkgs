@@ -16,7 +16,7 @@ cran_pkgs <- c('car', 'tidyr', 'dplyr', 'pryr', 'ggplot2', 'randomForest',
 bioc_pkgs <- c("GenomicRanges", "Gviz", "GenomicFeatures", "VariantAnnotation", 
                "rhdf5", "biomaRt", "limma", "affy", "bsseq", "ggbio", "made4", 
                "gwascat", "hgu133plus2cdf", "hgu133plus2probe", "Heatplus",
-               "TxDb.Hsapiens.UCSC.hg18.knownGene", "rtracklayer")
+               "TxDb.Hsapiens.UCSC.hg18.knownGene", "rtracklayer", "edgeR")
 
 github_pkgs <- c("hadley/staticdocs", "ramnathv/slidify", 
                  "ramnathv/slidifyLibraries", "nhejazi/nima")
