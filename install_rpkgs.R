@@ -23,7 +23,7 @@ github_pkgs <- c("hadley/staticdocs", "ramnathv/slidify",
                  "ramnathv/slidifyLibraries", "nhejazi/nima")
 
 # install packages from CRAN
-if (as.logical(grep("Darwin",Sys.info()["sysname"])) == TRUE) {
+if (as.logical(Sys.info()["sysname"] == "Darwin") == TRUE) {
   install.packages(cran_pkgs, repos = "https://cran.cnr.berkeley.edu/")
 } else {
   install.packages(cran_pkgs, repos = "http://cran.cnr.berkeley.edu/")
