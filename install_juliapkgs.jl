@@ -4,7 +4,7 @@ including loops to install all packages iteratively using Julia's package manage
 =#
 
 # pacakges for integrating with other software/programmatic systems
-pkgs_progs = ["Atom","AWS","Blink","Bokeh","CodeTools","Compat","DevTools","GitHub","Homebrew","IJulia","Jewel",
+pkgs_progs = ["Atom","AWS","Blink","Bokeh","CodeTools","Compat","GitHub","Homebrew","IJulia","Jewel",
               "LaTeXStrings","Markdown","TeXExtensions","PyCall","RCall","Lazy","LibCURL","MacroTools","ZMQ"]
 
 pkgs_maths = ["ArrayViews","Calculus","Cartesian","Distances","DualNumbers","ForwardDiff","Measures","NLopt",
@@ -48,3 +48,5 @@ end
 for miscs=1:length(pkgs_miscs)
   Pkg.add(pkgs_miscs[miscs])
 end
+
+Pkg.clone("https://github.com/JunoLab/DevTools.jl")
