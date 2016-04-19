@@ -42,7 +42,7 @@ for stats=1:length(pkgs_stats)
 end
 
 for datas=1:length(pkgs_datsc)
-  Pkg.add(pkgs_datas[datsc])
+  Pkg.add(pkgs_datsc[datas])
 end
 
 for miscs=1:length(pkgs_miscs)
