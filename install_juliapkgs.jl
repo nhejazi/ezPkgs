@@ -7,9 +7,9 @@ including loops to install all packages iteratively using Julia's package manage
 pkgs_progs = ["Atom","AWS","Blink","Bokeh","CodeTools","Compat","GitHub","Homebrew","IJulia","Jewel",
               "LaTeXStrings","Markdown","TexExtensions","PyCall","RCall","Lazy","LibCURL","MacroTools","ZMQ"]
 
-pkgs_maths = ["ArrayViews","Calculus","Cartesian","Distances","DualNumbers","ForwardDiff","Measures","NLopt",
-              "NaNMath","Optim","Polynomials","WaveletMatrices","Wavelets","WoodburyMatrices","Contour","Cubature",
-              "Grid","Hexagons","NumericFuns","PDMats"]
+pkgs_maths = ["ArrayViews","Calculus","Cartesian","Distances","DualNumbers","ForwardDiff","Measures","NaNMath",
+              "Optim","Polynomials","WaveletMatrices","Wavelets","WoodburyMatrices","Contour","Cubature","Grid",
+              "Hexagons","NumericFuns","PDMats"]
 
 # packages for statistics and machine learning
 pkgs_stats = ["AverageShiftedHistograms","BinDeps","Bootstrap","CovarianceMatrices","DimensionalityReduction",
