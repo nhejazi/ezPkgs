@@ -1,11 +1,11 @@
 # lists of packages to install, organized by repository
 cran_pkgs <- c('car', 'tidyr', 'dplyr', 'pryr', 'ggplot2', 'randomForest',
                'SuperLearner', 'lme4', 'nlme', 'stringr', 'lubridate', 'ggvis',
-               'rgl', 'mgcv', 'multcomp', 'vcd', 'glmnet', 'survival', 'caret',
+               'rgl', 'mgcv', 'multcomp', 'vcd', 'glmnet', 'survival', 'lintr',
                'shiny', 'xtable', 'pander', 'devtools', 'zoo', 'xts', 'Rcpp', 
                'data.table', 'parallel', 'testthat', 'lars', 'roxygen2', 'ade4',
                'foreign', 'scatterplot3d', 'Rcurl', 'DBI', 'RMySQL', 'impute',
-               'fastICA', 'e1071', 'reshape2', 'lintr', 'RColorBrewer', 
+               'fastICA', 'e1071', 'reshape2', 'RColorBrewer', 'caret', 'mlr',
                'neuralnet', 'nnet', 'clusterGeneration', 'RSNNS', 'tmle', 'ltmle',
                'selectiveInference', 'knitr', 'htmltools', 'yaml', 'shiny',
                'rmarkdown', 'png', 'stringi', 'gridExtra', 'rversions', 'R.devices',
