@@ -48,5 +48,3 @@ end
 for miscs=1:length(pkgs_miscs)
   Pkg.add(pkgs_miscs[miscs])
 end
-
-Pkg.clone("https://github.com/JunoLab/DevTools.jl")
