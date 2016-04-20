@@ -1,23 +1,19 @@
 # lists of packages to install, organized by repository
 cran_pkgs <- c('car', 'tidyr', 'dplyr', 'pryr', 'ggplot2', 'randomForest',
                'SuperLearner', 'lme4', 'nlme', 'stringr', 'lubridate', 'ggvis',
-               'rgl', 'htmlwidgets', 'dygraphs', 'network3D', 'threeJS',
-               'googleVis', 'mgcv', 'multcomp', 'vcd', 'glmnet', 'survival',
-               'caret', 'shiny', 'xtable', 'pander', 'devtools', 'zoo', 'xts',
-               'quantmod', 'data.table', 'Rcpp', 'parallel', 'testthat', 'lars',
-               'roxygen2', 'foreign', 'ade4', 'scatterplot3d', 'Rcurl', 'DBI',
-               'RMySQL', 'impute', 'fastICA', 'e1071', 'reshape2', 'lintr',
-               'RColorBrewer', 'neuralnet', 'nnet', 'clusterGeneration',
-               'RSNNS', 'tmle', 'ltmle', 'selectiveInference', 'knitr',
-               'htmltools', 'yaml', 'shiny', 'rmarkdown', 'png', 'stringi',
-               'gridExtra', 'rversions', 'R.devices', 'future', 'ggthemes',
-               'ElemStatLearn', 'session')
+               'rgl', 'mgcv', 'multcomp', 'vcd', 'glmnet', 'survival', 'caret',
+               'shiny', 'xtable', 'pander', 'devtools', 'zoo', 'xts', 'Rcpp', 
+               'data.table', 'parallel', 'testthat', 'lars', 'roxygen2', 'ade4',
+               'foreign', 'scatterplot3d', 'Rcurl', 'DBI', 'RMySQL', 'impute',
+               'fastICA', 'e1071', 'reshape2', 'lintr', 'RColorBrewer', 
+               'neuralnet', 'nnet', 'clusterGeneration', 'RSNNS', 'tmle', 'ltmle',
+               'selectiveInference', 'knitr', 'htmltools', 'yaml', 'shiny',
+               'rmarkdown', 'png', 'stringi', 'gridExtra', 'rversions', 'R.devices',
+               'future', 'ggthemes', 'ElemStatLearn', 'session', 'subsemble')
 
 bioc_pkgs <- c("GenomicRanges", "Gviz", "GenomicFeatures", "VariantAnnotation", 
                "rhdf5", "biomaRt", "limma", "affy", "bsseq", "ggbio", "made4", 
-               "gwascat", "hgu133plus2cdf", "hgu133plus2probe", "Heatplus",
-               "TxDb.Hsapiens.UCSC.hg18.knownGene", "rtracklayer", "edgeR",
-               "statmod")
+               "gwascat", "Heatplus", "rtracklayer", "edgeR", "statmod")
 
 github_pkgs <- c("hadley/staticdocs", "ramnathv/slidify", 
                  "ramnathv/slidifyLibraries", "nhejazi/nima")
@@ -37,3 +33,7 @@ biocLite(ask = FALSE)
 # install packages from GitHub
 library(devtools)
 devtools::install_github(github_pkgs)
+
+# add the H2O package for ensemble modeling
+install.packages("h2o", type="source", 
+                repos=(c("http://h2o-release.s3.amazonaws.com/h2o/rel-turchin/2/R")))
