@@ -15,8 +15,8 @@ misc = ('html5lib','cssselect','pyquery','lxml','BeautifulSoup',
 biol = ('nibabel','nipy','nitime','nilearn')
 
 if __name__ == '__main__':
-    install(core)
     install(stat)
     install(math)
     install(misc)
     install(biol)
+    install(core)
