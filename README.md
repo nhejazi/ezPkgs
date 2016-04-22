@@ -1,6 +1,8 @@
 # ezPkgs
 > Package setup for R, Julia, Python, Jupyter kernels, etc., made Eazy
 
+__to-do:__ _fix apparent issues on Linux wrt installation reliability_
+
 To set up useful package libraries for Python, Julia, R, and the Atom 
 editor, use the following:
 
