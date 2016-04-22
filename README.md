@@ -12,7 +12,8 @@ editor, use the following:
    `python2 update_pypkgs.py`)
 5. Atom editor v1.5+: `sh install_atompkgs.sh` (uses Atom `apm`)
 
-_N.B._, all uses of these scripts on Linux (Ubuntu) require use of __sudo__
+_N.B._, on Linux (Ubuntu), these scripts must be _run as root_ (requiring
+the use of __sudo__)
 
 _Supplementary_:
 
