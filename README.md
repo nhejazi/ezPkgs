@@ -12,6 +12,8 @@ editor, use the following:
    `python2 update_pypkgs.py`)
 5. Atom editor v1.5+: `sh install_atompkgs.sh` (uses Atom `apm`)
 
+_N.B._, all uses of these scripts on Linux (Ubuntu) require use of __sudo__. 
+
 _Supplementary_:
 
 1. Set up Jupyter kernels for R, Julia, Python, Torch, etc. manually using 
