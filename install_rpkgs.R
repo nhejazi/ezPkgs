@@ -1,29 +1,23 @@
 # lists of packages to install, organized by repository
-cran_pkgs <- c('car', 'tidyr', 'dplyr', 'pryr', 'ggplot2', 'randomForest',
-               'SuperLearner', 'lme4', 'nlme', 'stringr', 'lubridate', 'ggvis',
-               'rgl', 'mgcv', 'multcomp', 'vcd', 'glmnet', 'survival', 'lintr',
-               'shiny', 'xtable', 'pander', 'devtools', 'zoo', 'xts', 'Rcpp', 
-               'data.table', 'parallel', 'testthat', 'lars', 'roxygen2', 'ade4',
-               'foreign', 'scatterplot3d', 'Rcurl', 'DBI', 'RMySQL', 'impute',
-               'fastICA', 'e1071', 'reshape2', 'RColorBrewer', 'caret', 'mlr',
-               'neuralnet', 'nnet', 'clusterGeneration', 'RSNNS', 'tmle', 'ltmle',
-               'selectiveInference', 'knitr', 'htmltools', 'yaml', 'shiny',
-               'rmarkdown', 'png', 'stringi', 'gridExtra', 'rversions', 'R.devices',
-               'future', 'ggthemes', 'ElemStatLearn', 'session', 'subsemble')
+cran_pkgs <- c('plyr', 'dplyr', 'pryr', 'tidyr', 'Rcpp', 'RcppEigen', 'lintr',
+               'stringr', 'devtools', 'Rcurl', 'RMySQL', 'data.table', 'car',
+               'xtable', 'pander', 'testthat', 'foreign', 'parallel', 'shiny',
+               'lubridate', 'reshape2', 'knitr', 'roxygen2', 'RSQLite', 'DBI',
+               'ggplot2', 'randomForest', 'SuperLearner', 'lme4', 'nlme', 'rgl',
+               'ggvis', 'mgcv', 'multcomp', 'glmnet', 'scatterplot3d', 'impute',
+               'fastICA', 'e1071', 'caret', 'mlr', 'tmle', 'selectiveInference',
+               'statmod', 'yaml', 'rmarkdown', 'gridExtra', 'R.devices', 'future',
+               'ggthemes', 'subsemble')
 
 bioc_pkgs <- c("GenomicRanges", "Gviz", "GenomicFeatures", "VariantAnnotation", 
-               "rhdf5", "biomaRt", "limma", "affy", "bsseq", "ggbio", "made4", 
-               "gwascat", "Heatplus", "rtracklayer", "edgeR", "statmod")
+               "rhdf5", "biomaRt", "limma", "edgeR", "ggbio", "gwascat", 
+               "Heatplus", "rtracklayer")
 
 github_pkgs <- c("hadley/staticdocs", "ramnathv/slidify", 
                  "ramnathv/slidifyLibraries", "nhejazi/nima")
 
 # install packages from CRAN
-if (as.logical(Sys.info()["sysname"] == "Darwin") == TRUE) {
-  install.packages(cran_pkgs, repos = "https://cran.cnr.berkeley.edu/")
-} else {
-  install.packages(cran_pkgs, repos = "http://cran.cnr.berkeley.edu/")
-}
+install.packages(cran_pkgs)
 
 # install packages from Bioconductor
 source("http://www.bioconductor.org/biocLite.R")
