@@ -16,8 +16,8 @@ pkgs_maths = ["ArrayViews","Cartesian","Distances","DualNumbers","ForwardDiff","
               "NaNMath","Optim","Polynomials","WaveletMatrices","Wavelets","WoodburyMatrices"]
 
 # packages for statistics and machine learning
-pkgs_stats = ["AverageShiftedHistograms","Bootstrap","CovarianceMatrices","MultivariateStats","Feather",
-              "Distributions","GLM","RCall","RDatasets","ConjugatePriors","KernelDensity","PGM","Lora",
+pkgs_stats = ["AverageShiftedHistograms","Bootstrap","CovarianceMatrices","MultivariateStats","Lora",
+              "Distributions","GLM","RCall","RDatasets","ConjugatePriors","KernelDensity","PGM",
               "RegERMs","StatsBase","StatsFuns","Clustering","MLBase","NMF"]
 
 # packages for miscellaneous operations
