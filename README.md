@@ -1,12 +1,10 @@
 # ezPkgs
 > Package setup for R, Julia, Python, Jupyter kernels, etc., made Eazy
 
-__to-do:__ _fix apparent issues on Linux wrt installation reliability_
-
 To set up useful package libraries for Python, Julia, R, and the Atom 
 editor, use the following:
 
-** _run as root_ on Linux (Ubuntu) by adding prefix _sudo_ **
+**_run as root_ on Linux (Ubuntu) by adding prefix _sudo_**
 
 1. Julia v4.3+: `julia install_juliapkgs.jl`
 2. Python v3.4+: `python3 install_pypkgs.py`
