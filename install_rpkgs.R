@@ -1,13 +1,13 @@
 # lists of packages to install, organized by repository
 cran_pkgs <- c('plyr', 'dplyr', 'pryr', 'tidyr', 'Rcpp', 'RcppEigen', 'lintr',
                'stringr', 'devtools', 'Rcurl', 'RMySQL', 'data.table', 'car',
-               'xtable', 'pander', 'testthat', 'foreign', 'parallel', 'shiny',
-               'lubridate', 'reshape2', 'knitr', 'roxygen2', 'RSQLite', 'DBI',
+               'xtable', 'pander', 'testthat', 'foreign', 'lubridate', 'shiny',
+               'reshape2', 'knitr', 'roxygen2', 'RSQLite', 'DBI', 'subsemble',
                'ggplot2', 'randomForest', 'SuperLearner', 'lme4', 'nlme', 'rgl',
                'ggvis', 'mgcv', 'multcomp', 'glmnet', 'scatterplot3d', 'impute',
                'fastICA', 'e1071', 'caret', 'mlr', 'tmle', 'selectiveInference',
                'statmod', 'yaml', 'rmarkdown', 'gridExtra', 'R.devices', 'future',
-               'ggthemes', 'subsemble')
+               'ggthemes')
 
 bioc_pkgs <- c("GenomicRanges", "Gviz", "GenomicFeatures", "VariantAnnotation", 
                "rhdf5", "biomaRt", "limma", "edgeR", "ggbio", "gwascat", 
