@@ -1,19 +1,18 @@
 #!/usr/bin/bash
 
-apm install an-old-hope-syntax ask-stack atomatigit latex git-plus autocomplete-python
+# core packages to make use of Atom productive
+apm install language-r language-julia language-lua language-diff
+apm install git-plus git-status git-control git-time-machine remote-edit
+apm install color-picker env-from-shell file-icons highlight-selected
+apm install linter linter-lintr linter-pylint linter-lua linter-markdown
+apm install script vim-mode minimap autocomplete-python project-manager
 
-apm install color-picker env-from-shell file-icons highlight-selected latex-completions hydrogen
-
-apm install latexer merge-conflicts language-diff language-julia language-latex language-lua minimap
-
-apm install language-r language-scala linter linter-lintr linter-pylint linter-lua linter-markdown
-
-apm install minimap-find-and-replace minimap-git-diff minimap-highlight-selected minimap-pigments
-
-apm install octocat-syntax open-github-from-npm pigments project-manager remote-edit script vim-mode
-
-# install testing stuff on Mac OS X only
+# additional packages to enhance productivity on OSX
 if [ `uname` == "Darwin" ]; then
-  apm install r-exec activate-power-mode travis-ci-status atom-macros
-  apm install ink julia-ide julia-client jude  #JuliaIDE support in Atom
+  apm install ink julia-ide julia-client jude  # Julia IDE support in Atom
+  apm install language-latex language-scala latex r-exec
+  apm install activate-power-mode travis-ci-status merge-conflicts
+  apm install an-old-hope-syntax ask-stack open-github-from-npm atom-macros
+  apm install minimap-find-and-replace minimap-pigments minimap-cursorline
+  apm install minimap-highlight-selected minimap-git-diff minimap-linter
 fi
