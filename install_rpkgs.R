@@ -27,6 +27,8 @@ biocLite(ask = FALSE)
 library(devtools)
 devtools::install_github(github_pkgs)
 
-# add the H2O package for ensemble modeling
-install.packages("h2o", type="source", 
-                repos=(c("http://h2o-release.s3.amazonaws.com/h2o/rel-turchin/2/R")))
+# add the H2O package for ensemble modeling (on OSX only)
+if ( Sys.info()['sysname'] == "Darwin" ) {
+  install.packages("h2o", type="source", 
+                   repos=(c("http://h2o-release.s3.amazonaws.com/h2o/rel-turchin/2/R")))
+}
