@@ -27,6 +27,11 @@ biocLite(ask = FALSE)
 library(devtools)
 devtools::install_github(github_pkgs)
 
+# add packages for the IRkernel in Jupyter notebooks
+install.packages(c("rzmq","repr","IRkernel","IRdisplay"), 
+                 repos = c("http://irkernel.github.io/", getOption("repos")))
+IRkernel::kernelspec()
+
 # add the H2O package for ensemble modeling (on OSX only)
 if ( Sys.info()['sysname'] == "Darwin" ) {
   install.packages("h2o", type="source", 
