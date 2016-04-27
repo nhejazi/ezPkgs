@@ -10,14 +10,14 @@ def upgrade(packages):
         
 # Example
 core = ('ipython','Pillow','virtualenv','nose','pylint','neovim',
-        'awscli','StarCluster','jupyter','notebook')
+        'awscli','StarCluster','ipykernel')
 stat = ('numpy','scipy','pandas','matplotlib','seaborn','plotly',
         'scikit-learn','statsmodels','feather')
 math = ('nltk','sympy','q','snakeviz','networkx','cloud')
 biol = ('nibabel','nipy','nitime','nilearn')
 
 if sys.version_info > (3, 4):
-    not2 = ('xonsh')
+    notpy2 = ('jupyter','notebook','xonsh')
 
 if __name__ == '__main__':
     install(stat)
@@ -31,5 +31,5 @@ if __name__ == '__main__':
     upgrade(core)
     # only install/upgrade in Python v3.4+
     if sys.version_info > (3, 4):
-        install(not2)
-        upgrade(not2)
+        install(notpy2)
+        upgrade(notpy2)
