@@ -9,8 +9,8 @@ cran_pkgs <- c('plyr', 'dplyr', 'pryr', 'tidyr', 'Rcpp', 'RcppEigen', 'lintr',
                'statmod', 'yaml', 'rmarkdown', 'gridExtra', 'R.devices', 'future')
 
 bioc_pkgs <- c("GenomicRanges", "Gviz", "GenomicFeatures", "VariantAnnotation", 
-               "rhdf5", "biomaRt", "limma", "edgeR", "ggbio", "gwascat", 
-               "Heatplus", "rtracklayer", "impute")
+               "rhdf5", "biomaRt", "limma", "edgeR", "biobroom", "gwascat", 
+               "Heatplus", "rtracklayer", "impute", "ggbio")
 
 github_pkgs <- c("hadley/staticdocs", "ramnathv/slidify", 
                  "ramnathv/slidifyLibraries", "nhejazi/nima")
