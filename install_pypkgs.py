@@ -14,22 +14,23 @@ core = ('ipython','Pillow','virtualenv','nose','pylint','neovim',
 stat = ('numpy','scipy','pandas','matplotlib','seaborn','plotly',
         'scikit-learn','statsmodels','feather')
 math = ('nltk','sympy','q','snakeviz','networkx','cloud')
-biol = ('nibabel','nipy','nitime','nilearn')
+biol = ('biopython','nibabel','nipy','nitime','nilearn')
 
-if sys.version_info > (3, 4):
+if sys.version_info > (3, 1):
     notpy2 = ('jupyter','notebook','xonsh')
 
 if __name__ == '__main__':
+    # only install/upgrade in Python v3.1+
+    if sys.version_info > (3, 1):
+        install(notpy2)
+        upgrade(notpy2)
+    # pip install listed packages
     install(stat)
     install(math)
     install(biol)
     install(core)
-    # upgrade listed packages
+    # pip upgrade listed packages
     upgrade(stat)
     upgrade(math)
     upgrade(biol)
     upgrade(core)
-    # only install/upgrade in Python v3.4+
-    if sys.version_info > (3, 4):
-        install(notpy2)
-        upgrade(notpy2)
