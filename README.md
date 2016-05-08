@@ -26,9 +26,9 @@ _Supplementary_:
 
 N.B., for these scripts to work as intended, _base installations of these tools 
 must be performed in advance:_ 
-For OS X setup, see [nhejazi/freshOSX](https://github.com/nhejazi/freshOSX); 
-or, for Linux Ubuntu setup, see 
-[nhejazi/freshUbuntu](https://github.com/nhejazi/freshUbuntu).
+
+1. For OS X setup, see [nhejazi/freshOSX](https://github.com/nhejazi/freshOSX) 
+2. For Linux Ubuntu setup, see [nhejazi/freshUbuntu](https://github.com/nhejazi/freshUbuntu)
 
 ---
 
