@@ -17,7 +17,7 @@ math = ('nltk','sympy','q','snakeviz','networkx','cloud')
 biol = ('biopython','nibabel','nipy','nitime','nilearn')
 
 if sys.version_info > (3, 1):
-    notpy2 = ('jupyter','notebook','xonsh')
+    notpy2 = ('jupyter','notebook','xonsh','gitsome')
 
 if __name__ == '__main__':
     # only install/upgrade in Python v3.1+
