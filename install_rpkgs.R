@@ -1,16 +1,19 @@
 # lists of packages to install, organized by repository
-cran_pkgs <- c('plyr', 'dplyr', 'pryr', 'tidyr', 'Rcpp', 'RcppEigen', 'lintr',
-               'stringr', 'devtools', 'RCurl', 'RMySQL', 'data.table', 'car',
-               'xtable', 'pander', 'testthat', 'foreign', 'lubridate', 'shiny',
-               'reshape2', 'knitr', 'roxygen2', 'RSQLite', 'DBI', 'subsemble',
-               'ggplot2', 'randomForest', 'SuperLearner', 'lme4', 'nlme', 'rgl',
-               'ggvis', 'mgcv', 'multcomp', 'glmnet', 'scatterplot3d', 'ggthemes',
-               'fastICA', 'e1071', 'caret', 'mlr', 'tmle', 'selectiveInference',
-               'statmod', 'yaml', 'rmarkdown', 'gridExtra', 'R.devices', 'future')
+cran_pkgs <- c("plyr", "dplyr", "pryr", "tidyr", "Rcpp", "RcppEigen",
+               "lintr", "knitr", "RCurl", "RMySQL", "ggplot2", "car",
+               "devtools", "xtable", "pander", "testthat", "foreign",
+               "lubridate", "shiny", "stringr", "data.table", "nlme",
+               "lme4", "reshape2", "roxygen2", "RSQLite", "ggthemes",
+               "DBI", "yaml", "rgl", "fastICA", "statmod", "glmnet",
+               "randomForest", "e1071", "multcomp", "caret", "mlr",
+               "ggvis", "mgcv", "rmarkdown", "gridExtra", "packrat",
+               "ProjectTemplate", "scatterplot3d", "R.devices", "future",
+               "SuperLearner", "subsemble", "tmle", "selectiveInference")
 
-bioc_pkgs <- c("GenomicRanges", "Gviz", "GenomicFeatures", "VariantAnnotation", 
-               "rhdf5", "biomaRt", "limma", "edgeR", "biobroom", "gwascat", 
-               "Heatplus", "rtracklayer", "impute", "ggbio")
+bioc_pkgs <- c("GenomicRanges", "Gviz", "GenomicFeatures", "ggbio",
+               "VariantAnnotation", "rhdf5", "biomaRt", "biobroom",
+               "limma", "edgeR", "gwascat", "Heatplus", "impute",
+               "rtracklayer")
 
 github_pkgs <- c("hadley/staticdocs", "ramnathv/slidify", 
                  "ramnathv/slidifyLibraries", "nhejazi/nima")
@@ -29,7 +32,8 @@ devtools::install_github(github_pkgs)
 
 # add packages for the IRkernel in Jupyter notebooks
 install.packages(c("rzmq","repr","IRkernel","IRdisplay"), 
-                 repos = c("http://irkernel.github.io/", getOption("repos")))
+                 repos = c("http://irkernel.github.io/",
+                 getOption("repos")))
 IRkernel::kernelspec()
 
 # add the H2O package for ensemble modeling (on OSX only)
