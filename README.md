@@ -1,6 +1,8 @@
 # ezPkgs
 > Package setup for R, Julia, Python, Jupyter kernels, etc., made Eazy
 
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+
 To set up useful package libraries for Python, Julia, R, and the Atom 
 editor, use the following:
 
@@ -33,8 +35,6 @@ must be performed in advance:_
 ---
 
 ## License
-
-[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
 &copy; 2016 Nima Hejazi
 
