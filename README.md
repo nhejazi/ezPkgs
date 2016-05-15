@@ -34,6 +34,8 @@ must be performed in advance:_
 
 ## License
 
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+
 &copy; 2016 Nima Hejazi
 
 This repository is licensed under the MIT license. See `LICENSE` for details.
