@@ -12,7 +12,8 @@ def upgrade(packages):
 core = ('ipython','Pillow','virtualenv','nose','pylint','neovim',
         'awscli','StarCluster','ipykernel')
 stat = ('numpy','scipy','pandas','matplotlib','seaborn','plotly',
-        'scikit-learn','statsmodels','feather')
+        'scikit-learn','statsmodels','feather','bashplotlib',
+        'ggplot')
 math = ('nltk','sympy','q','snakeviz','networkx','cloud')
 biol = ('biopython','nibabel','nipy','nitime','nilearn')
 
