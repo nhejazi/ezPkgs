@@ -1,12 +1,12 @@
 #!/usr/bin/bash
 
 # core packages to make use of Atom productive
-apm install language-r language-julia language-lua language-diff script
+apm install language-r language-lua language-diff script
 apm install linter linter-lintr linter-pylint linter-lua linter-markdown
 apm install minimap vim-mode git-plus remote-edit file-icons color-picker
 apm install autocomplete-python travis-ci-status ask-stack merge-conflicts
 apm install env-from-shell highlight-selected project-manager
-apm install julia-client uber-juno #for Juno (Julia IDE)
+apm install ink language-julia julia-client  # for Juno (Julia IDE)
 
 # additional packages to enhance productivity on OSX
 if [ `uname` == "Darwin" ]; then
