@@ -12,7 +12,7 @@ apm install ink language-julia julia-client  # to setup Juno (Julia IDE)
 
 # additional packages to enhance productivity on OSX
 if [ `uname` == "Darwin" ]; then
-  apm install language-latex language-scala r-exec latex csv-to-json tablr
+  apm install language-latex language-scala r-exec latex tablr json-converter
   apm install an-old-hope-syntax activate-power-mode  # some fun additions
   apm install minimap-find-and-replace minimap-pigments minimap-liner
   apm install minimap-cursorline minimap-highlight-selected minimap-git-diff
