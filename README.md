@@ -5,7 +5,7 @@
 
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
-## Preliminaries:
+## Preliminaries
 
 _N.B._, for these scripts to work as intended, _base installations of these
 tools must be performed in advance:_ 
@@ -13,12 +13,12 @@ tools must be performed in advance:_
 1. For OS X setup, see [nhejazi/freshOSX](https://github.com/nhejazi/freshOSX) 
 2. For Linux Ubuntu setup, see [nhejazi/freshUbuntu](https://github.com/nhejazi/freshUbuntu)
 
-## Directions/Roadmap:
+## Directions/Roadmap
 
 To set up useful package libraries for Python, Julia, R, and the Atom 
 editor, the following workflow is recommended:
 
-**_run as root_ on Linux (Debian/Ubuntu) by adding prefix _sudo_**
+**_run as root_ on Linux (Debian/Ubuntu) by adding prefix `sudo`**
 
 1. Julia v4.3+: `julia install_juliapkgs.jl`
 2. Python v3.4+: `python3 install_pypkgs.py`
@@ -30,7 +30,7 @@ _N.B._, to install packages in R, it is best to avoid permissions issues
 by running the install script interactively in an R session started from
 the terminal (i.e., use of `R CMD BATCH` is __not__ recommended).
 
-_Supplementary_:
+### Supplementary Tools
 
 1. Download and install the pythonic [Xonsh 
    shell](https://github.com/xonsh/xonsh) by following these
