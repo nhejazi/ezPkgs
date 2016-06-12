@@ -1,5 +1,12 @@
 #!/usr/bin/bash
 
+if [ `uname` == "Linux" ]; then
+  if [[ $EUID -ne 0 ]]; then
+    echo "This script must be run as root" 1>&2
+    exit 1
+  fi
+fi
+
 ## core packages to improve productivity and add a nice theme
 apm install pigments minimap linter highlight-selected file-icons
 apm install git-plus git-time-machine merge-conflicts color-picker
