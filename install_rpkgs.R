@@ -19,7 +19,7 @@ github_pkgs <- c("hadley/staticdocs", "ramnathv/slidify",
                  "ramnathv/slidifyLibraries", "nhejazi/nima")
 
 # install packages from CRAN
-install.packages(cran_pkgs)
+install.packages(cran_pkgs, dependencies = TRUE)
 
 # install packages from Bioconductor
 source("http://www.bioconductor.org/biocLite.R")
