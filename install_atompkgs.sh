@@ -8,7 +8,7 @@ apm install script Hydrogen  # run code interactively in the editor!
 apm install seti-ui seti-syntax  # a nice dark theme I actually like
 ## support tools for languages, linters, autocompletion, and Juno IDE 
 apm install language-r language-lua language-diff language-markdown
-apm install autocomplete-python autocomplete-julia autocomplete-clang
+apm install autocomplete-python autocomplete-clang
 apm install linter-lintr linter-pylint linter-lua linter-markdown linter-clang
 apm install language-julia ink julia-client  # to set up Juno (Julia IDE)
 
