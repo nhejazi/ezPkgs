@@ -16,7 +16,7 @@ bioc_pkgs <- c("GenomicRanges", "Gviz", "GenomicFeatures", "ggbio",
                "rtracklayer")
 
 github_pkgs <- c("hadley/staticdocs", "ramnathv/slidify", 
-                 "ramnathv/slidifyLibraries", "nhejazi/rnima")
+                 "ramnathv/slidifyLibraries", "nhejazi/nima")
 
 # install packages from CRAN
 install.packages(cran_pkgs, dependencies = TRUE)
