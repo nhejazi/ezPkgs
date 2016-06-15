@@ -29,8 +29,8 @@ editor, the following workflow is recommended:
 _N.B._, to install packages in R, it is best to avoid permissions issues
 by running the install script interactively in an R session started from
 the terminal (i.e., using `R CMD BATCH` is __not__ recommended). `Rscript`
-seems reliable (as of 15 June 2016), but this reliability cannot be not
-guaranteed currently.
+seems to work fairly well (as of 15 June 2016), but this functionality is
+not currently verified to be reliable.
 
 ### Supplementary Tools
 
