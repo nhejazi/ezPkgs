@@ -21,10 +21,11 @@ github_pkgs <- c("hadley/staticdocs", "ramnathv/slidify",
                  "ramnathv/slidifyLibraries", "nhejazi/nima",
                  "ecpolley/SuperLearner", "ledell/subsemble",
                  "thomasp85/ggforce", "thomasp85/ggraph",
-                 "dgrtwo/gganimate", "jennybc/googlesheets")
+                 "dgrtwo/gganimate", "jennybc/googlesheets",
+                 "jimhester/covr")
 
 # install packages from CRAN
-install.packages(cran_pkgs, dependencies = TRUE)
+install.packages(cran_pkgs)
 
 # install packages from Bioconductor
 source("http://www.bioconductor.org/biocLite.R")
