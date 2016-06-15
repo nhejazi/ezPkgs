@@ -8,7 +8,7 @@ cran_pkgs <- c("Rcpp", "RcppEigen", "plyr", "dplyr", "pryr", "tidyr",
                "randomForest", "e1071", "multcomp", "caret", "mlr",
                "ggvis", "mgcv", "rmarkdown", "gridExtra", "packrat",
                "ProjectTemplate", "scatterplot3d", "tmle", "littler",
-               "R.devices", "future", "rfoaas", "rmsfact", "purrr")
+               "purrr", "R.devices", "future", "rfoaas", "rmsfact")
 
 bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb",
                "limma", "BiocParallel", "rtracklayer", "biomaRt",
@@ -36,14 +36,25 @@ biocLite(ask = FALSE)
 library(devtools)
 devtools::install_github(github_pkgs)
 
-# add packages for the IRkernel in Jupyter notebooks
-install.packages(c("rzmq","repr","IRkernel","IRdisplay"), 
-                 repos = c("http://irkernel.github.io/",
-                 getOption("repos")))
-IRkernel::kernelspec()
+# add packages for the R kernel in Jupyter
+install.packages(c("repr", "pbdZMQ"))
+devtools::install_github("IRkernel/IRdisplay")
+devtools::install_github("IRkernel/IRkernel")
+IRkernel::installspec(user = FALSE)
 
-# add the H2O package for ensemble modeling (on OSX only)
+# add H2O on OSX only (Java required => not Chromebook Xubuntu friendly)
 if ( Sys.info()['sysname'] == "Darwin" ) {
-  install.packages("h2o", type="source", 
-                   repos=(c("http://h2o-release.s3.amazonaws.com/h2o/rel-turchin/2/R")))
+  # The following two commands remove any previously installed H2O packages for R
+  if ("package:h2o" %in% search()) { detach("package:h2o", unload = TRUE) }
+  if ("h2o" %in% rownames(installed.packages())) { remove.packages("h2o") }
+
+  # Next, we download packages that H2O depends on
+  pkgs <- c("methods","statmod","stats","graphics","RCurl","jsonlite","tools","utils")
+  for (pkg in pkgs) {
+      if (! (pkg %in% rownames(installed.packages()))) { install.packages(pkg) }
+  }
+
+  # Now we download and install the H2O package for R
+  install.packages("h2o", type = "source",
+                   repos=(c("http://h2o-release.s3.amazonaws.com/h2o/rel-turchin/9/R")))
 }
