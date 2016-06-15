@@ -10,21 +10,27 @@ def upgrade(packages):
         
 # Example
 core = ('ipython','Pillow','virtualenv','nose','pylint','neovim',
-        'awscli','StarCluster','ipykernel')
+        'awscli','StarCluster')
 stat = ('numpy','scipy','pandas','matplotlib','seaborn','plotly',
         'scikit-learn','statsmodels','feather','bashplotlib',
         'ggplot')
 math = ('nltk','sympy','q','snakeviz','networkx','cloud')
 biol = ('biopython','nibabel','nipy','nitime','nilearn')
 
+if sys.version_info > (3, 3):
+    shell = ('xonsh','gitsome')
+    
 if sys.version_info > (3, 1):
-    notpy2 = ('jupyter','notebook','xonsh','gitsome')
-
+    jupyter = ('jupyter','notebook','ipykernel')
+    
 if __name__ == '__main__':
-    # only install/upgrade in Python v3.1+
+    # only install/upgrade in Python v3.3+
     if sys.version_info > (3, 1):
-        install(notpy2)
-        upgrade(notpy2)
+        install(jupyter)
+        upgrade(jupyter)
+    if sys.version_info > (3, 3):
+        install(shell)
+        upgrade(shell)
     # pip install listed packages
     install(stat)
     install(math)
