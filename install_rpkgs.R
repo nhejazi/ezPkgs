@@ -1,5 +1,5 @@
 # lists of packages to install, organized by repository
-cran_pkgs <- c("plyr", "dplyr", "pryr", "tidyr", "Rcpp", "RcppEigen",
+cran_pkgs <- c("Rcpp", "RcppEigen", "plyr", "dplyr", "pryr", "tidyr",
                "lintr", "knitr", "RCurl", "RMySQL", "ggplot2", "car",
                "devtools", "xtable", "pander", "testthat", "foreign",
                "lubridate", "shiny", "stringr", "data.table", "nlme",
@@ -7,16 +7,21 @@ cran_pkgs <- c("plyr", "dplyr", "pryr", "tidyr", "Rcpp", "RcppEigen",
                "DBI", "yaml", "rgl", "fastICA", "statmod", "glmnet",
                "randomForest", "e1071", "multcomp", "caret", "mlr",
                "ggvis", "mgcv", "rmarkdown", "gridExtra", "packrat",
-               "ProjectTemplate", "scatterplot3d", "R.devices", "future",
-               "SuperLearner", "subsemble", "tmle", "selectiveInference")
+               "ProjectTemplate", "scatterplot3d", "tmle", "littler",
+               "R.devices", "future", "rfoaas", "rmsfact", "purrr")
 
-bioc_pkgs <- c("GenomicRanges", "Gviz", "GenomicFeatures", "ggbio",
-               "VariantAnnotation", "rhdf5", "biomaRt", "biobroom",
-               "limma", "edgeR", "gwascat", "Heatplus", "impute",
-               "rtracklayer")
+bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb",
+               "limma", "BiocParallel", "rtracklayer", "biomaRt",
+               "GenomicAlignments", "edgeR", "VariantAnnotation",
+               "multtest", "impute", "affy", "rhdf5", "pcaMethods",
+               "Heatplus", "gwascat", "marray", "EDASeq", "oligo",
+               "aroma.light", "bsseq", "DSS")
 
 github_pkgs <- c("hadley/staticdocs", "ramnathv/slidify", 
-                 "ramnathv/slidifyLibraries", "nhejazi/nima")
+                 "ramnathv/slidifyLibraries", "nhejazi/nima",
+                 "ecpolley/SuperLearner", "ledell/subsemble",
+                 "thomasp85/ggforce", "thomasp85/ggraph",
+                 "dgrtwo/gganimate", "jennybc/googlesheets")
 
 # install packages from CRAN
 install.packages(cran_pkgs, dependencies = TRUE)
