@@ -47,17 +47,16 @@
 ## [An R kernel for Jupyter notebooks](http://irkernel.github.io/installation/)
 
 - To install the appropriate dependencies, within R:
-  ```R
-  install.packages(c("rzmq","repr","IRkernel","IRdisplay"), 
-                   repos = c("http://irkernel.github.io/", getOption("repos")))
-  IRkernel::installspec()
+  ```r
+  install.packages(c('repr', 'pbdZMQ', 'devtools')) # repr is already on CRAN
+  devtools::install_github('IRkernel/IRdisplay')
+  devtools::install_github('IRkernel/IRkernel')
+  IRkernel::installspec(user = FALSE)
   ```
 n.b., on Mac OSX this must be done within an R session started from the terminal.
 
-- To update the IRkernel package, within R:
-  ```R
-  update.packages(repos = c("http://irkernel.github.io/", getOption("repos")))
-  ```
+- To update the IRkernel package, within R, run `devtools::install_github(...)`
+  lines again.
 
 ## [A Julia kernel for Jupyter notebooks](https://github.com/JuliaLang/IJulia.jl)
 
