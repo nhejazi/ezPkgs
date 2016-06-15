@@ -34,18 +34,19 @@ not currently verified to be reliable.
 
 ### Supplementary Tools
 
-1. Download and install the pythonic [Xonsh 
+1. Set up Jupyter kernels for R, Julia, Python, Torch, etc., manually
+   using the instructions in `notes_jupyter.md`. _Note that kernels for
+   R, Python3, and Julia are set up in the individual language-specific
+   install scripts_. These notes are updated semi-regularly to facilitate
+   installation of other kernels (e.g., Python2, Torch, etc.).
+
+2. Download and install the pythonic [Xonsh 
    shell](https://github.com/xonsh/xonsh) by following these
    instructions [for Linux](http://xon.sh/linux.html) or [for
    OSX](http://xon.sh/osx.html). Note that setup of Xonsh and
    [gitsome](https://github.com/donnemartin/gitsome) are
    performed within `install_pypkgs.py` for Python v.3.3+; links are
    kept here for reference.
-
-2. Set up Jupyter kernels for R, Julia, Python, Torch, etc., manually
-   using the instructions in `notes_jupyter.md`. Note that kernels for
-   R, Python, and Julia are set up in the individual install scripts,
-   thus these notes are primarily for reference.
 
 ---
 
