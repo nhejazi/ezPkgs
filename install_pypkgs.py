@@ -1,6 +1,14 @@
 import pip, sys
 
+def getPkgs():
+    inst_pkgs = pip.get_installed_distributions()
+    inst_pkgs_list = sorted(["%s==%s" % (i.key, i.version) for i in inst_pkgs])
+    inst_pkgs_noVer = [c.split("==") for c in inst_pkgs_list]
+    inst_pkgs_tuple = tuple([c[0] for c in inst_pkgs_noVer])
+    return(inst_pkgs_tuple)
+
 def install(packages):
+    # loop over packages 
     for x in range(len(packages)):
         pip.main(['install',packages[x]])
         
@@ -8,36 +16,32 @@ def upgrade(packages):
     for x in range(len(packages)):
         pip.main(['install','--upgrade',packages[x]])
         
-# Example
+# Categorized list of packages for installation
+inst_pkgs = getPkgs()  # currently installed packages
 core = ('ipython','Pillow','virtualenv','nose','pylint','neovim',
         'awscli','StarCluster')
 stat = ('numpy','scipy','pandas','matplotlib','seaborn','plotly',
-        'scikit-learn','statsmodels','feather','bashplotlib',
-        'ggplot')
+        'scikit-learn','statsmodels','feather','bashplotlib','la',
+        'ggplot','pymc')
 math = ('nltk','sympy','q','snakeviz','networkx','cloud')
 biol = ('biopython','nibabel','nipy','nitime','nilearn')
 
 if sys.version_info > (3, 3):
-    shell = ('xonsh','gitsome')
-    
-if sys.version_info > (3, 1):
-    jupyter = ('jupyter','notebook','ipykernel')
+    jupyter = ('jupyter')
+
+if sys.version_info > (3, 4):
+    shells = ('xonsh','gitsome')
     
 if __name__ == '__main__':
-    # only install/upgrade in Python v3.3+
-    if sys.version_info > (3, 1):
-        install(jupyter)
-        upgrade(jupyter)
+    # Jupyter requires Python3.3+
     if sys.version_info > (3, 3):
-        install(shell)
-        upgrade(shell)
+        install(jupyter); upgrade(jupyter)
+    # Xonsh, gitsome shells require Python3.4+
+    if sys.version_info > (3, 4):
+        install(shells); upgrade(shells)
     # pip install listed packages
-    install(stat)
-    install(math)
-    install(biol)
-    install(core)
+    install(stat); install(math)
+    install(biol); install(core)
     # pip upgrade listed packages
-    upgrade(stat)
-    upgrade(math)
-    upgrade(biol)
-    upgrade(core)
+    upgrade(stat); upgrade(math)
+    upgrade(biol); upgrade(core)
