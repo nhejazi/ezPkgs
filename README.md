@@ -10,8 +10,8 @@
 _N.B._, for these scripts to work as intended, _base installations of these
 tools must be performed in advance:_ 
 
-1. For OS X setup, see [nhejazi/freshOSX](https://github.com/nhejazi/freshOSX) 
-2. For Linux Ubuntu setup, see [nhejazi/freshUbuntu](https://github.com/nhejazi/freshUbuntu)
+1. For Mac OS X (or, now, macOS) setup: [nhejazi/freshOSX](https://github.com/nhejazi/freshOSX) 
+2. For Linux Ubuntu (14.04+) setup: [nhejazi/freshUbuntu](https://github.com/nhejazi/freshUbuntu)
 
 ## Directions/Roadmap
 
@@ -29,7 +29,8 @@ editor, the following workflow is recommended:
 _N.B._, to install packages in R, it is best to avoid permissions issues
 by running the install script interactively in an R session started from
 the terminal (i.e., using `R CMD BATCH` is __not__ recommended). `Rscript`
-seems reliable (as of 15 June 2016), but reliability is not guaranteed.
+seems reliable (as of 15 June 2016), but this reliability cannot be not
+guaranteed currently.
 
 ### Supplementary Tools
 
@@ -38,13 +39,13 @@ seems reliable (as of 15 June 2016), but reliability is not guaranteed.
    instructions [for Linux](http://xon.sh/linux.html) or [for
    OSX](http://xon.sh/osx.html). Note that setup of Xonsh and
    [gitsome](https://github.com/donnemartin/gitsome) are
-   performed within `install_pypkgs.py` for Python v.3.3+; these
-   links are kept here mainly for reference.
+   performed within `install_pypkgs.py` for Python v.3.3+; links are
+   kept here for reference.
 
 2. Set up Jupyter kernels for R, Julia, Python, Torch, etc., manually
-   using the instructions in `jupyter_notes.md`. Note that kernels for
-   R, Python, and Julia are already set up in the individual install
-   scripts, thus these notes are primarily for reference.
+   using the instructions in `notes_jupyter.md`. Note that kernels for
+   R, Python, and Julia are set up in the individual install scripts,
+   thus these notes are primarily for reference.
 
 ---
 
