@@ -26,10 +26,10 @@ github_pkgs <- c("hadley/staticdocs", "ramnathv/slidify",
 
 # put all packages in a common folder (prevents R version issues)
 if (as.character(Sys.info()["effective_user"]) == "nimahejazi") {
-  if (!file.exists("/Users/nimahejazi/.Rlibrary")) {
-    dir.create("/Users/nimahejazi/.Rlibrary", showWarnings = FALSE)
+  if (!file.exists("~/.Rlibrary")) {
+    dir.create("~/.Rlibrary", showWarnings = FALSE)
   }
-  .libPaths("/Users/nimahejazi/.Rlibrary")
+  .libPaths("~/.Rlibrary")
 }
 
 # install packages from CRAN
