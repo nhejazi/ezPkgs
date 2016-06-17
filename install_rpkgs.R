@@ -24,6 +24,14 @@ github_pkgs <- c("hadley/staticdocs", "ramnathv/slidify",
                  "dgrtwo/gganimate", "jennybc/googlesheets",
                  "jimhester/covr")
 
+# put all packages in a common folder (prevents R version issues)
+if (as.character(Sys.info()["effective_user"]) == "nimahejazi") {
+  if (!file.exists("/Users/nimahejazi/.Rlibrary")) {
+    dir.create("/Users/nimahejazi/.Rlibrary", showWarnings = FALSE)
+  }
+  .libPaths("/Users/nimahejazi/.Rlibrary")
+}
+
 # install packages from CRAN
 install.packages(cran_pkgs)
 
