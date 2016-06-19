@@ -48,7 +48,7 @@
 ## [An R kernel for Jupyter notebooks](http://irkernel.github.io/installation/)
 
 - To install the appropriate dependencies, within R:
-  ```r
+  ```R
   install.packages(c('repr', 'pbdZMQ', 'devtools')) # repr is already on CRAN
   devtools::install_github('IRkernel/IRdisplay')
   devtools::install_github('IRkernel/IRkernel')
