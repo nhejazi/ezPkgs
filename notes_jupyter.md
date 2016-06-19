@@ -36,6 +36,7 @@
      python2 -m pip install ipykernel
      python2 -m ipykernel install --user
      ```
+     
   *  Use of the above will allow access to kernels for Python2 and Python3 in
      the same Jupyter notebook environment.
 
@@ -53,6 +54,7 @@
   devtools::install_github('IRkernel/IRkernel')
   IRkernel::installspec(user = FALSE)
   ```
+  
 N.B., on Mac OSX this must be done within an R session started from the terminal.
 
 - To update the IRkernel package, within R, run `devtools::install_github(...)`
@@ -61,9 +63,10 @@ N.B., on Mac OSX this must be done within an R session started from the terminal
 ## [A Julia kernel for Jupyter notebooks](https://github.com/JuliaLang/IJulia.jl)
 
 - To install, within Julia, the following will suffice:
-
-  * `Pkg.add("IJulia")`
-
+  ```Julia
+  Pkg.add("IJulia")
+  ```
+  
 - To update the IJulia kernel, the following steps are necessary:
   ```Julia
   Pkg.update()
