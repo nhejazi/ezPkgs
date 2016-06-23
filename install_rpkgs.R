@@ -15,7 +15,8 @@ bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb",
                "GenomicAlignments", "edgeR", "VariantAnnotation",
                "multtest", "impute", "affy", "rhdf5", "pcaMethods",
                "Heatplus", "gwascat", "marray", "EDASeq", "oligo",
-               "aroma.light", "bsseq", "DSS")
+               "aroma.light", "bsseq", "ShortRead", "ensembledb",
+               "Rgraphviz", "DSS")
 
 github_pkgs <- c("hadley/staticdocs", "ramnathv/slidify", 
                  "ramnathv/slidifyLibraries", "nhejazi/nima",
