@@ -5,7 +5,8 @@ including loops to install all packages iteratively using Julia's package manage
 
 # pacakges for integrating with other software/programmatic systems
 pkgs_progs = ["Atom","AWS","Blink","Bokeh","CodeTools","Compat","GitHub","Homebrew","IJulia","Jewel",
-              "LaTeXStrings","Markdown","TexExtensions","PyCall","Lazy","LibCURL","MacroTools","ZMQ"]
+              "LaTeXStrings","Markdown","TexExtensions","PyCall","Lazy","LibCURL","MacroTools","ZMQ",
+              "Plotly"]
 
 # packages for data science and data visualization
 pkgs_datas = ["BufferedStreams","CSV","DataArrays","DataFrames","DataStreams","DataStructures","JSON",
