@@ -9,7 +9,7 @@ cran_pkgs <- c("Rcpp", "RcppEigen", "plyr", "dplyr", "pryr", "tidyr",
                "ggvis", "mgcv", "rmarkdown", "gridExtra", "packrat",
                "ProjectTemplate", "scatterplot3d", "tmle", "littler",
                "purrr", "R.devices", "future", "rfoaas", "rmsfact",
-               "selectiveInference")
+               "gaussfacts", "selectiveInference", "plotly")
 
 bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb",
                "limma", "BiocParallel", "rtracklayer", "biomaRt",
