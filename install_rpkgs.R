@@ -3,29 +3,32 @@ cran_pkgs <- c("Rcpp", "RcppEigen", "plyr", "dplyr", "pryr", "tidyr",
                "lintr", "knitr", "RCurl", "RMySQL", "ggplot2", "car",
                "devtools", "xtable", "pander", "testthat", "foreign",
                "lubridate", "shiny", "stringr", "data.table", "nlme",
-               "lme4", "reshape2", "roxygen2", "RSQLite", "ggthemes",
+               "lme4", "reshape2", "roxygen2", "littler", "ggthemes",
                "DBI", "yaml", "rgl", "fastICA", "statmod", "glmnet",
                "randomForest", "e1071", "multcomp", "caret", "mlr",
                "ggvis", "mgcv", "rmarkdown", "gridExtra", "packrat",
-               "ProjectTemplate", "scatterplot3d", "tmle", "littler",
-               "purrr", "R.devices", "future", "rfoaas", "rmsfact",
-               "gaussfacts", "selectiveInference", "plotly")
+               "ProjectTemplate", "scatterplot3d", "profvis", "tmle",
+               "R.devices", "future", "purrr", "selectiveInference",
+               "gaussfacts", "rmsfact", "rfoaas", "plotly", "rbokeh",
+               "xgboost"
+              )
 
 bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb",
                "limma", "BiocParallel", "rtracklayer", "biomaRt",
                "GenomicAlignments", "edgeR", "VariantAnnotation",
                "multtest", "impute", "affy", "rhdf5", "pcaMethods",
                "Heatplus", "gwascat", "marray", "EDASeq", "oligo",
-               "aroma.light", "DESeq2", "ShortRead", "ensembledb",
-               "Gviz", "Rgraphviz", "bumphunter", "minfi", "BiSeq",
-               "bsseq", "DSS")
+               "aroma.light", "DESeq2", "ShortRead", "Rgraphviz",
+               "Gviz", "bumphunter", "minfi", "bsseq", "DSS"
+              )
 
-github_pkgs <- c("hadley/staticdocs", "ramnathv/slidify", 
-                 "ramnathv/slidifyLibraries", "nhejazi/nima",
+github_pkgs <- c("ramnathv/slidify", "ramnathv/slidifyLibraries",
+                 "ramnathv/htmlwidgets", "jennybc/googlesheets",
                  "ecpolley/SuperLearner", "ledell/subsemble",
-                 "thomasp85/ggforce", "thomasp85/ggraph",
-                 "dgrtwo/gganimate", "jennybc/googlesheets",
-                 "jimhester/covr", "ramnathv/htmlwidgets")
+                 "dgrtwo/gganimate", "davidgohel/ggiraph",
+                 "jimhester/covr", "rstudio/bookdown",
+                 "nhejazi/nima", "jalvesaq/colorout"
+                )
 
 # put all packages in a common folder (prevents R version issues)
 if (as.character(Sys.info()["effective_user"]) == "nimahejazi") {
