@@ -22,12 +22,12 @@ bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb",
                "Gviz", "bumphunter", "minfi", "bsseq", "DSS"
               )
 
-github_pkgs <- c("ramnathv/slidify", "ramnathv/slidifyLibraries",
+github_pkgs <- c("dgrtwo/broom", "jimhester/covr", "nhejazi/nima",
+                 "ramnathv/slidify", "ramnathv/slidifyLibraries",
                  "ramnathv/htmlwidgets", "jennybc/googlesheets",
-                 "ecpolley/SuperLearner", "ledell/subsemble",
+                 "ecpolley/SuperLearner", "rstudio/bookdown",
                  "dgrtwo/gganimate", "davidgohel/ggiraph",
-                 "jimhester/covr", "rstudio/bookdown",
-                 "nhejazi/nima", "jalvesaq/colorout"
+                 "ledell/subsemble", "jalvesaq/colorout"
                 )
 
 # put all packages in a common folder (prevents R version issues)
@@ -48,7 +48,7 @@ biocLite(ask = FALSE)
 
 # install packages from GitHub
 library(devtools)
-devtools::install_github(github_pkgs)
+devtools::install_github(github_pkgs, force = TRUE)
 
 # add packages for the R kernel in Jupyter
 install.packages(c("repr", "pbdZMQ"))
@@ -56,8 +56,8 @@ devtools::install_github("IRkernel/IRdisplay")
 devtools::install_github("IRkernel/IRkernel")
 IRkernel::installspec(user = FALSE)
 
-# add H2O on OSX only (Java required => not Chromebook Xubuntu friendly)
-if ( Sys.info()['sysname'] == "Darwin" ) {
+# add H2O on my (local) machines only (Java req. => NOT for Chromebook Xubuntu)
+if (as.character(Sys.info()["effective_user"]) == "nimahejazi") {
   # The following two commands remove any previously installed H2O packages for R
   if ("package:h2o" %in% search()) { detach("package:h2o", unload = TRUE) }
   if ("h2o" %in% rownames(installed.packages())) { remove.packages("h2o") }
