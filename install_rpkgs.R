@@ -1,16 +1,15 @@
 # lists of packages to install, organized by repository
 cran_pkgs <- c("Rcpp", "RcppEigen", "plyr", "dplyr", "pryr", "tidyr",
-               "lintr", "knitr", "RCurl", "RMySQL", "ggplot2", "car",
+               "lintr", "knitr", "RCurl", "purrr", "ggplot2", "car",
                "devtools", "xtable", "pander", "testthat", "foreign",
                "lubridate", "shiny", "stringr", "data.table", "nlme",
                "lme4", "reshape2", "roxygen2", "littler", "ggthemes",
-               "DBI", "yaml", "rgl", "fastICA", "statmod", "glmnet",
-               "randomForest", "e1071", "multcomp", "caret", "mlr",
-               "ggvis", "mgcv", "rmarkdown", "gridExtra", "packrat",
+               "DBI", "yaml", "fastICA", "statmod", "glmnet", "mlr",
+               "randomForest", "e1071", "multcomp", "caret", "ggvis",
+               "plotly", "mgcv", "rmarkdown", "gridExtra", "xgboost",
                "ProjectTemplate", "scatterplot3d", "profvis", "tmle",
-               "R.devices", "future", "purrr", "selectiveInference",
-               "gaussfacts", "rmsfact", "rfoaas", "plotly", "rbokeh",
-               "xgboost"
+               "R.devices", "future", "selectiveInference", "rbokeh",
+               "gaussfacts", "rmsfact", "rfoaas", "dtplyr"
               )
 
 bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb",
