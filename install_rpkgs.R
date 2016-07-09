@@ -9,7 +9,7 @@ cran_pkgs <- c("Rcpp", "RcppEigen", "plyr", "dplyr", "pryr", "tidyr",
                "plotly", "mgcv", "rmarkdown", "gridExtra", "xgboost",
                "ProjectTemplate", "scatterplot3d", "profvis", "tmle",
                "R.devices", "future", "selectiveInference", "rbokeh",
-               "gaussfacts", "rmsfact", "rfoaas", "dtplyr"
+               "gaussfacts", "rmsfact", "rfoaas", "dtplyr", "tibble"
               )
 
 bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb",
