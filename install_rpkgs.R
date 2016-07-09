@@ -9,7 +9,8 @@ cran_pkgs <- c("Rcpp", "RcppEigen", "plyr", "dplyr", "pryr", "tidyr",
                "plotly", "mgcv", "rmarkdown", "gridExtra", "xgboost",
                "ProjectTemplate", "scatterplot3d", "profvis", "tmle",
                "R.devices", "future", "selectiveInference", "rbokeh",
-               "gaussfacts", "rmsfact", "rfoaas", "dtplyr", "tibble"
+               "gaussfacts", "rmsfact", "rfoaas", "dtplyr", "tibble",
+               "shiny"
               )
 
 bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb",
@@ -21,12 +22,12 @@ bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb",
                "Gviz", "bumphunter", "minfi", "bsseq", "DSS"
               )
 
-github_pkgs <- c("dgrtwo/broom", "jimhester/covr", "nhejazi/nima",
-                 "ramnathv/slidify", "ramnathv/slidifyLibraries",
-                 "ramnathv/htmlwidgets", "jennybc/googlesheets",
-                 "ecpolley/SuperLearner", "rstudio/bookdown",
-                 "dgrtwo/gganimate", "davidgohel/ggiraph",
-                 "ledell/subsemble", "jalvesaq/colorout"
+github_pkgs <- c("ramnathv/slidify", "ramnathv/slidifyLibraries",
+                 "ramnathv/htmlwidgets", "ecpolley/SuperLearner",
+                 "ledell/subsemble", "dgrtwo/broom", "dgrtwo/gganimate",
+                 "rstudio/bookdown", "rstudio/sparklyr",
+                 "jimhester/covr", "davidgohel/ggiraph",
+                 "jalvesaq/colorout"
                 )
 
 # put all packages in a common folder (prevents R version issues)
@@ -48,6 +49,7 @@ biocLite(ask = FALSE)
 # install packages from GitHub
 library(devtools)
 devtools::install_github(github_pkgs, force = TRUE)
+devtools::install_github("nhejazi/nima", ref = "develop")
 
 # add packages for the R kernel in Jupyter
 install.packages(c("repr", "pbdZMQ"))
