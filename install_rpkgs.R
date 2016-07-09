@@ -23,10 +23,11 @@ bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb",
               )
 
 github_pkgs <- c("ramnathv/slidify", "ramnathv/slidifyLibraries",
-                 "ramnathv/htmlwidgets", "ecpolley/SuperLearner",
-                 "ledell/subsemble", "dgrtwo/broom", "dgrtwo/gganimate",
+                 "ramnathv/htmlwidgets", "jennybc/googlesheets",
+                 "ecpolley/SuperLearner", "ledell/subsemble",
+                 "davidgohel/ggiraph", "dgrtwo/gganimate",
                  "rstudio/bookdown", "rstudio/sparklyr",
-                 "jimhester/covr", "davidgohel/ggiraph",
+                 "dgrtwo/broom", "jimhester/covr",
                  "jalvesaq/colorout"
                 )
 
