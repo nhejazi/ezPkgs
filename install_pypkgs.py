@@ -8,40 +8,46 @@ def getPkgs():
     return(inst_pkgs_tuple)
 
 def install(packages):
-    # loop over packages 
+    # loop over packages
     for x in range(len(packages)):
         pip.main(['install',packages[x]])
-        
+
 def upgrade(packages):
     for x in range(len(packages)):
         pip.main(['install','--upgrade',packages[x]])
-        
+
 # Categorized list of packages for installation
 inst_pkgs = getPkgs()  # currently installed packages
-core = ('ipython','Pillow','virtualenv','nose','pylint','neovim',
-        'awscli','StarCluster')
-stat = ('numpy','scipy','pandas','matplotlib','seaborn','plotly',
-        'scikit-learn','statsmodels','feather','bashplotlib','la',
-        'ggplot','pymc')
-math = ('nltk','sympy','q','snakeviz','networkx','cloud')
-biol = ('biopython','nibabel','nipy','nitime','nilearn')
+
+core = ('ipython', 'Pillow', 'virtualenv', 'nose', 'pylint', 'neovim', 'awscli')
+
+stat = ('numpy', 'scipy', 'pandas', 'matplotlib', 'seaborn', 'plotly', 'ggplot',
+        'scikit-learn', 'statsmodels', 'pymc', 'pylab')
+
+math = ('nltk', 'sympy', 'q', 'snakeviz', 'networkx')
+
+biol = ('biopython', 'nibabel', 'nipy', 'nitime', 'nilearn')
 
 if sys.version_info > (3, 3):
-    jupyter = ('jupyter')
+    py3misc = ('jupyter', 'bashplotlib')
 
 if sys.version_info > (3, 4):
-    shells = ('xonsh','gitsome')
-    
+    shells = ('xonsh', 'gitsome')
+
+
 if __name__ == '__main__':
-    # Jupyter requires Python3.3+
+    # some modules now require python 3.3+ (Jupyter, etc.)
     if sys.version_info > (3, 3):
-        install(jupyter); upgrade(jupyter)
-    # Xonsh, gitsome shells require Python3.4+
+        install(py3misc); upgrade(py3misc)
+
+    # the xonsh shell and gitsome cli require python 3.4+
     if sys.version_info > (3, 4):
         install(shells); upgrade(shells)
+
     # pip install listed packages
     install(stat); install(math)
     install(biol); install(core)
+
     # pip upgrade listed packages
     upgrade(stat); upgrade(math)
     upgrade(biol); upgrade(core)

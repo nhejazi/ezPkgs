@@ -1,0 +1,12 @@
+ipython
+Pillow
+virtualenv
+nose
+pylint
+neovim
+awscli','StarCluster')
+stat = ('numpy','scipy','pandas','matplotlib','seaborn','plotly',
+        'scikit-learn','statsmodels','feather','bashplotlib','la',
+        'ggplot','pymc')
+math = ('nltk','sympy','q','snakeviz','networkx','cloud')
+biol = ('biopython','nibabel','nipy','nitime','nilearn')
