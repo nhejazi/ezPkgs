@@ -1,6 +1,6 @@
 py2:
 			python2 install_pypkgs.py
-			python install pypkgs.py
+			python install_pypkgs.py
 			pip2 install -r install_py2.txt
 			pip2 install --upgrade -r install_py2.txt
 
