@@ -12,6 +12,7 @@ matplotlib
 seaborn
 plotly
 ggplot
+altair
 scikit-learn
 statsmodels
 pymc
