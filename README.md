@@ -1,26 +1,16 @@
 # myPkgLib
 
-> Package libraries and setup scripts for R, Python, Julia,
-> Atom, and more...
-
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
-## Preliminaries
-
-__N.B.__, for these scripts to work as intended, _base installations of these
-tools must be performed in advance:_
-
-1. For macOS (or, Mac OS X) setup:
-    [nhejazi/macOS-fresh](https://github.com/nhejazi/macOS-fresh)
-2. For Linux Ubuntu (14.04+) setup:
-    [nhejazi/ubuntu-fresh](https://github.com/nhejazi/ubuntu-fresh)
+> Package libraries and setup scripts for R, Python, Julia,
+> and Atom (editor)
 
 ---
 
-## Directions/Roadmap
+## How to Use:
 
-To set up useful package libraries for Python, Julia, R, and the Atom editor,
-the following order of steps is recommended:
+To set up package libraries for Python (2.7 or 3.3+), Julia, R, and the Atom
+editor, the following order of steps is recommended:
 
 **_run as root_ on Linux (Debian/Ubuntu) by adding prefix `sudo`**
 
@@ -36,7 +26,9 @@ terminal (i.e., using `R CMD BATCH` is __not__ recommended). `Rscript` seems to
 work well (as of 15 June 2016), but this functionality has not yet been verified
 as reliable.
 
-## Supplementary Tools
+---
+
+## Supplementary
 
 1. Set up Jupyter kernels for R, Julia, Python, Torch, etc., manually using the
     instructions in the file `notes_jupyter.md`. _Note that Jupyter kernels for
@@ -51,19 +43,35 @@ as reliable.
     [gitsome](https://github.com/donnemartin/gitsome) are performed for Python
     v.3.3+ via `install_pypkgs.py`.
 
+---
+
 ## Notes
 
 * On macOS / Mac OS X, the system Python is Python 2.6.6 and is symlinked as
     `python`. After installation of newer versions of Python (via `brew`),
     Python 2.7.12 is symlinked as `python2`, and Python 3.5.3 is symlinked as
-    `python3`. This should be taken into account when using the above
-    instructions. _This is current as of 27 August 2016._
+    `python3`. Account for this when using the above instructions. _This is
+    current as of 27 August 2016._
 
 * On Linux Ubuntu Trusy Tahr (14.04), the system Python is Python 3.4.3 and is
     symlinked as `python3`. After installation of newer Python versions (via
-    Felix Krull's "deadsnakes" PPA), Python 3.5 is symlinked as `python3.5`.
-    This should be taken into account when using the above instructions. _This
+    [Felix Krull's "deadsnakes"
+    PPA](https://launchpad.net/~fkrull/+archive/ubuntu/deadsnakes)), Python
+    3.5 is symlinked as `python3.5`, while Python 2.7.X is symlinked as
+    `Python2.7`. Account for this when using the above instructions. _This
     is current as of 27 August 2016._
+
+---
+
+## Related
+
+__N.B.__, for these scripts to work as intended, _base installations of the
+relevant tools must be performed in advance:_
+
+1. For macOS (or, Mac OS X) setup:
+    [nhejazi/macOS-fresh](https://github.com/nhejazi/macOS-fresh)
+2. For Linux Ubuntu (14.04+) setup:
+    [nhejazi/ubuntu-fresh](https://github.com/nhejazi/ubuntu-fresh)
 
 ---
 
