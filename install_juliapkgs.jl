@@ -5,7 +5,7 @@ including loops to install all packages iteratively using Julia's package manage
 
 # pacakges for integrating with other software/programmatic systems
 pkgs_progs = ["IJulia", "Blink", "DevTools", "Compat", "Homebrew", "FileIO", "MacroTools",
-              "Lazy", "Cairo", "RCall", "PyCall"]
+              "Lint", "Lazy", "Cairo", "RCall", "PyCall"]
 
 # packages for data science and data visualization
 pkgs_datas = ["DataArrays", "DataFrames", "Gadfly", "Winston", "PyPlot", "Plotly", "Bokeh"]
