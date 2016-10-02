@@ -7,17 +7,20 @@ if [ `uname` == "Linux" ]; then
   fi
 fi
 
-## core packages to improve productivity and add a nice theme
+## core packages to improve productivity
 apm install pigments minimap linter highlight-selected file-icons
 apm install git-plus git-time-machine merge-conflicts color-picker
 apm install vim-mode ask-stack travis-ci-status
-apm install script r-exec Hydrogen  # code interactively!
-apm install seti-ui seti-syntax  # a nice dark theme I actually like
+apm install script Hydrogen r-exec  # code interactively!
+apm install seti-ui seti-syntax  # a dark theme I actually like
+
 ## packages to add some extra functionality to the minimap
 apm install minimap-highlight-selected minimap-find-and-replace
 apm install minimap-cursorline minimap-git-diff minimap-pigments
-## support tools for languages, linters, autocompletion, and Juno IDE 
-apm install language-r language-lua language-diff language-markdown
-apm install language-latex autocomplete-python autocomplete-clang
+
+## support tools for languages, linters, autocompletion, Juno IDE 
+apm install language-r language-julia language-lua
+apm install language-latex language-markdown
+apm install autocomplete-python autocomplete-clang
 apm install linter-lintr linter-pylint linter-lua linter-clang
-apm install language-julia ink julia-client  # for Juno (Julia IDE)
+apm install uber-juno  # for Juno (Julia) IDE
