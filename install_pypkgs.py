@@ -26,7 +26,7 @@ stat = ('numpy', 'scipy', 'pandas', 'matplotlib', 'seaborn', 'plotly', 'ggplot',
 
 math = ('nltk', 'sympy', 'q', 'snakeviz', 'networkx')
 
-biol = ('biopython', 'nibabel', 'nipy', 'nitime', 'nilearn')
+biol = ('biopython', 'nibabel', 'nipy')
 
 if sys.version_info > (3, 3):
     py3misc = ('jupyter', 'bashplotlib')
