@@ -19,8 +19,8 @@ apm install minimap-highlight-selected minimap-find-and-replace
 apm install minimap-cursorline minimap-git-diff minimap-pigments
 
 ## support tools for languages, linters, autocompletion, Juno IDE 
-apm install language-r language-julia language-lua
-apm install language-latex language-markdown
+apm install language-r language-julia language-scala language-lua
+apm install language-latex language-markdown language-pfm
 apm install autocomplete-python autocomplete-clang
 apm install linter-lintr linter-pylint linter-lua linter-clang
 apm install uber-juno  # for Juno (Julia) IDE
