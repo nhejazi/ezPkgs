@@ -20,7 +20,7 @@ bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb",
                "Heatplus", "gwascat", "marray", "EDASeq", "oligo",
                "aroma.light", "DESeq2", "ShortRead", "Rgraphviz",
                "Gviz", "hopach", "bumphunter", "minfi", "bsseq",
-               "AnnotationHub"
+               "AnnotationHub", "pachterlab/sleuth"
               )
 
 github_pkgs <- c("ramnathv/slidify", "ramnathv/slidifyLibraries",

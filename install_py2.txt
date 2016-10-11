@@ -4,15 +4,11 @@ virtualenv
 nose
 pylint
 neovim
-awscli
 numpy
 scipy
 pandas
 matplotlib
 seaborn
-plotly
-ggplot
-altair
 scikit-learn
 statsmodels
 pymc
@@ -25,5 +21,3 @@ networkx
 biopython
 nibabel
 nipy
-nitime
-nilearn

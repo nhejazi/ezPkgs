@@ -19,7 +19,7 @@ def upgrade(packages):
 # Categorized list of packages for installation
 inst_pkgs = getPkgs()  # currently installed packages
 
-core = ('ipython', 'Pillow', 'virtualenv', 'nose', 'pylint', 'neovim', 'awscli')
+core = ('ipython', 'Pillow', 'virtualenv', 'nose', 'pylint', 'neovim')
 
 stat = ('numpy', 'scipy', 'pandas', 'matplotlib', 'seaborn', 'plotly', 'ggplot',
         'altair', 'scikit-learn', 'statsmodels', 'pymc', 'pylab')
@@ -29,7 +29,7 @@ math = ('nltk', 'sympy', 'q', 'snakeviz', 'networkx')
 biol = ('biopython', 'nibabel', 'nipy')
 
 if sys.version_info > (3, 3):
-    py3misc = ('jupyter', 'bashplotlib')
+    py3misc = ('jupyter', 'bashplotlib', 'awscli')
 
 if sys.version_info > (3, 4):
     shells = ('xonsh', 'gitsome')
