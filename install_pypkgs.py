@@ -22,7 +22,7 @@ inst_pkgs = getPkgs()  # currently installed packages
 core = ('ipython', 'Pillow', 'virtualenv', 'nose', 'pylint', 'neovim')
 
 stat = ('numpy', 'scipy', 'pandas', 'matplotlib', 'seaborn', 'plotly', 'ggplot',
-        'altair', 'scikit-learn', 'statsmodels', 'pymc', 'pylab')
+        'altair', 'scikit-learn', 'mlxtend', 'statsmodels', 'pymc', 'pylab')
 
 math = ('nltk', 'sympy', 'q', 'snakeviz', 'networkx')
 

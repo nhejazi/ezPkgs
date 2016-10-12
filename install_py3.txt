@@ -14,6 +14,7 @@ plotly
 ggplot
 altair
 scikit-learn
+mlxtend
 statsmodels
 pymc
 pylab
