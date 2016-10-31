@@ -10,7 +10,7 @@ cran_pkgs <- c("Rcpp", "RcppEigen", "plyr", "dplyr", "pryr", "tidyr",
                "ProjectTemplate", "scatterplot3d", "profvis", "tmle",
                "R.devices", "future", "selectiveInference", "rbokeh",
                "gaussfacts", "rmsfact", "rfoaas", "dtplyr", "tibble",
-               "shiny", "elasticnet"
+               "shiny", "elasticnet", "stargazer", "h2o"
               )
 
 bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb",
@@ -29,7 +29,7 @@ github_pkgs <- c("ramnathv/slidify", "ramnathv/slidifyLibraries",
                  "davidgohel/ggiraph", "dgrtwo/gganimate",
                  "rstudio/bookdown", "rstudio/sparklyr",
                  "karthik/wesanderson", "dgrtwo/broom",
-                 "jimhester/covr", "jalvesaq/colorout" 
+                 "jimhester/covr", "jalvesaq/colorout"
                 )
 
 # put all packages in a common folder (prevents R version issues)
@@ -54,24 +54,7 @@ devtools::install_github(github_pkgs, force = TRUE)
 devtools::install_github("nhejazi/nima", ref = "develop")
 
 # add packages for the R kernel in Jupyter
-install.packages(c("repr", "pbdZMQ"))
-devtools::install_github("IRkernel/IRdisplay")
+install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ',
+                   'devtools', 'uuid', 'digest'))
 devtools::install_github("IRkernel/IRkernel")
 IRkernel::installspec(user = FALSE)
-
-# add H2O on my (local) machines only (Java req. => NOT for Chromebook Xubuntu)
-if (as.character(Sys.info()["effective_user"]) == "nimahejazi") {
-  # The following two commands remove any previously installed H2O packages for R
-  if ("package:h2o" %in% search()) { detach("package:h2o", unload = TRUE) }
-  if ("h2o" %in% rownames(installed.packages())) { remove.packages("h2o") }
-
-  # Next, we download packages that H2O depends on
-  pkgs <- c("methods","statmod","stats","graphics","RCurl","jsonlite","tools","utils")
-  for (pkg in pkgs) {
-      if (! (pkg %in% rownames(installed.packages()))) { install.packages(pkg) }
-  }
-
-  # Now we download and install the H2O package for R
-  install.packages("h2o", type = "source",
-                   repos=(c("http://h2o-release.s3.amazonaws.com/h2o/rel-turchin/9/R")))
-}
