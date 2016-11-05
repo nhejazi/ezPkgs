@@ -23,4 +23,4 @@ apm install language-r language-julia language-scala language-lua
 apm install language-latex language-markdown language-pfm
 apm install autocomplete-python autocomplete-clang
 apm install linter-lintr linter-pylint linter-lua linter-clang
-apm install uber-juno  # for Juno (Julia) IDE
+apm install uber-juno  # Juno, the IDE for the Julia language
