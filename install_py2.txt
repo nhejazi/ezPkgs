@@ -3,7 +3,6 @@ Pillow
 virtualenv
 nose
 pylint
-neovim
 numpy
 scipy
 pandas
@@ -18,6 +17,3 @@ sympy
 q
 snakeviz
 networkx
-biopython
-nibabel
-nipy

@@ -19,35 +19,26 @@ def upgrade(packages):
 # Categorized list of packages for installation
 inst_pkgs = getPkgs()  # currently installed packages
 
-core = ('ipython', 'Pillow', 'virtualenv', 'nose', 'pylint', 'neovim')
+essentials = ('ipython', 'Pillow', 'virtualenv', 'nose', 'pylint')
 
-stat = ('numpy', 'scipy', 'pandas', 'matplotlib', 'seaborn', 'plotly', 'ggplot',
-        'altair', 'scikit-learn', 'mlxtend', 'statsmodels', 'pymc', 'pylab')
+stat_core = ('numpy', 'scipy', 'pandas', 'matplotlib', 'seaborn',
+             'scikit-learn', 'statsmodels', 'pymc', 'pylab', 'nltk', 'sympy',
+             'q', 'snakeviz', 'networkx')
 
-math = ('nltk', 'sympy', 'q', 'snakeviz', 'networkx')
+extras = ('plotly', 'ggplot', 'altair', 'mlxtend', 'biopython', 'nibabel',
+          'nipy')
 
-biol = ('biopython', 'nibabel', 'nipy')
-
-if sys.version_info > (3, 3):
-    py3misc = ('jupyter', 'bashplotlib', 'awscli')
-
-if sys.version_info > (3, 4):
-    shells = ('xonsh', 'gitsome')
-
+py3only = ('jupyter', 'bashplotlib', 'awscli', 'neovim', 'jedi', 'xonsh',
+           'gitsome')
 
 if __name__ == '__main__':
-    # some modules now require python 3.3+ (Jupyter, etc.)
-    if sys.version_info > (3, 3):
-        install(py3misc); upgrade(py3misc)
-
-    # the xonsh shell and gitsome cli require python 3.4+
-    if sys.version_info > (3, 4):
-        install(shells); upgrade(shells)
-
     # pip install listed packages
-    install(stat); install(math)
-    install(biol); install(core)
+    install(essentials); install(stat_core)
 
     # pip upgrade listed packages
-    upgrade(stat); upgrade(math)
-    upgrade(biol); upgrade(core)
+    upgrade(essentials); upgrade(stat_core)
+
+    # essentials that for use with Python3
+    if sys.version_info > (3, 4):
+        install(py3only); upgrade(py3only)
+        install(extras); upgrade(extras)

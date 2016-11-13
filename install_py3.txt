@@ -5,6 +5,10 @@ nose
 pylint
 neovim
 awscli
+jedi
+jupyter
+xonsh
+gitsome
 numpy
 scipy
 pandas
@@ -26,7 +30,3 @@ networkx
 biopython
 nibabel
 nipy
-jupyter
-bashplotlib
-xonsh
-gitsome
