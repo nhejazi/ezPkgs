@@ -10,8 +10,8 @@ fi
 ## core packages to improve productivity
 apm install pigments minimap linter highlight-selected file-icons
 apm install git-plus git-time-machine merge-conflicts color-picker
-apm install vim-mode ask-stack travis-ci-status
-apm install script Hydrogen r-exec  # code interactively!
+apm install vim-mode atom-beautify activate-power-mode atomic-chrome
+apm install script hydrogen r-exec  # code interactively!
 apm install seti-ui seti-syntax  # a dark theme I actually like
 
 ## packages to add some extra functionality to the minimap
