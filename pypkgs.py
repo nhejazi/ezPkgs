@@ -10,26 +10,24 @@ def getPkgs():
 def install(packages):
     # loop over packages
     for x in range(len(packages)):
-        pip.main(['install',packages[x]])
+        pip.main(['install', packages[x]])
 
 def upgrade(packages):
     for x in range(len(packages)):
-        pip.main(['install','--upgrade',packages[x]])
+        pip.main(['install', '--upgrade', packages[x]])
 
 # Categorized list of packages for installation
 inst_pkgs = getPkgs()  # currently installed packages
 
-essentials = ('ipython', 'Pillow', 'virtualenv', 'nose', 'pylint')
+essentials = ('ipython', 'Pillow', 'virtualenv', 'nose', 'pylint', 'matplotlib')
 
-stat_core = ('numpy', 'scipy', 'pandas', 'matplotlib', 'seaborn',
-             'scikit-learn', 'statsmodels', 'pymc', 'pylab', 'nltk', 'sympy',
-             'q', 'snakeviz', 'networkx')
+stat_core = ('numpy', 'scipy', 'pandas', 'sympy', 'scikit-learn', 'statsmodels',
+             'seaborn', 'pymc', 'pylab', 'nltk', 'q', 'snakeviz', 'networkx')
 
-extras = ('plotly', 'ggplot', 'altair', 'mlxtend', 'biopython', 'nibabel',
-          'nipy')
+extras = ('altair', 'ggplot', 'plotly', 'bokeh', 'mlxtend', 'csvkit',
+          'biopython', 'nibabel', 'nipy')
 
-py3only = ('jupyter', 'bashplotlib', 'awscli', 'neovim', 'jedi', 'xonsh',
-           'gitsome')
+py3only = ('jupyter', 'awscli', 'neovim', 'jedi', 'xonsh', 'gitsome')
 
 if __name__ == '__main__':
     # pip install listed packages
@@ -38,7 +36,7 @@ if __name__ == '__main__':
     # pip upgrade listed packages
     upgrade(essentials); upgrade(stat_core)
 
-    # essentials that for use with Python3
+    # essentials for use with Python v.3.3+
     if sys.version_info > (3, 4):
         install(py3only); upgrade(py3only)
         install(extras); upgrade(extras)

@@ -1,21 +1,17 @@
+.PHONY : all
+all: julia rstats py3 py2 atom
+
 py2:
-			python2 install_pypkgs.py
-			python install_pypkgs.py
-			pip2 install -r install_py2.txt
-			pip2 install --upgrade -r install_py2.txt
+	python2 pypkgs.py
 
 py3:
-			python3 install_pypkgs.py
-			pip3 install -r install_py3.txt
-			pip3 install --upgrade -r install_py3.txt
+	python3 pypkgs.py
 
 rstats:
-			Rscript -e install_rpkgs.R
+	Rscript -e rpkgs.R
 
 julia:
-			julia install_juliapkgs.jl
+	julia juliapkgs.jl
 
 atom:
-			sh install_atompkgs.sh
-
-all: julia rstats py3 py2 atom
+	sh atompkgs.sh
