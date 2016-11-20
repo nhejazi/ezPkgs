@@ -1,7 +1,7 @@
 # Jupyter kernels for scientific computing
 
-> Set up Jupyter kernels for some languages common in statistics and data
-> science (i.e., R, Julia, Python 3, Python 2, Torch)
+> Set up Jupyter kernels for languages common in statistics and data science
+> (e.g., R, Julia, Python 3, Python 2)
 
 ## Using the Jupyter notebook with multiple kernels
 - After installation, all of the desired kernels can be accessed from the
@@ -16,8 +16,8 @@
     line:
 
   * `jupyter qtconsole --kernel=KERNEL` or `jupyter console --kernel=KERNEL`,
-      for KERNEL in {ir, julia-0.4, python2, python3} to access kernels for R,
-        Julia (v. 0.4.X), Python 2.X, and Python 3.X, respectively.
+      replacing KERNEL with the name of the kernel for the desired language
+      (_e.g._, `ir` for the R language)
   * on macOS, the list of kernels should appear in `~/Library/Jupyter/kernels`
 
 ---
@@ -42,12 +42,12 @@
   *  Use of the above will allow access to kernels for Python2 and Python3 in
       the same Jupyter notebook environment.
 
-- _(Update 2016 April):_ Instructions given for setting up the python kernels
-    are adapted from [this GitHub
-    issue](https://github.com/jupyter/jupyter/issues/52).
+- _(Update 2016 Apr.):_ Instructions given for setting up the python kernels
+    are adapted from [this issue on
+    GitHub](https://github.com/jupyter/jupyter/issues/52).
 
-- _(Update 2016 June):_ Instructions for setting up multiple Python kernels for
-    have been added to the [documentation
+- _(Update 2016 Jun.):_ Instructions for setting up multiple Python kernels have
+    been added to the [documentation
     here](https://ipython.readthedocs.io/en/stable/install/kernel_install.html).
 
 ---

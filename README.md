@@ -24,15 +24,15 @@ editor](https://atom.io), the following order of steps is recommended:
 
 __N.B.__, to install packages for R, it is best to avoid permissions issues by
 running the install script interactively in an R session started from the
-terminal (_in particular, use of `R CMD BATCH` is __not__ recommended_).
+terminal (_in particular, use of `R CMD BATCH` is **not** recommended_).
 `Rscript` seems to work well (as of 15 June 2016), but this functionality has
-not yet been verified as reliable.
+not yet been verified as being completely reliable.
 
 ---
 
 ## _Caveat Emptor_
 
-_The following information is current as of __27 August 2016__ and should be
+_The following information is current as of **27 August 2016** and should be
 taken into account when following the recommended install procedure above._
 
 * On macOS, the "system Python" is Python 2.6.6 and is symlinked as `python`.
