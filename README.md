@@ -10,30 +10,30 @@ license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://openso
 
 ## Directions:
 
-To set up package libraries for [Python](https://www.python.org),
-[Julia](http://julialang.org), [R](https://www.r-project.org), and the [Atom
+To set up package libraries for [R](https://www.r-project.org),
+[Python](https://www.python.org), [Julia](http://julialang.org), and the [Atom
 editor](https://atom.io), the following order of steps is recommended:
 
 **On Ubuntu (Linux) _run as root_ by adding prefix `sudo`**
 
-1. Julia: `julia juliapkgs.jl`
-2. R: `Rscript -e rpkgs.R` (or in an R session)
-3. Python v3.4+: `python3 pypkgs.py` (use `python3.5` on Ubuntu 14.04)
-4. Python v2.7+: `python2 pypkgs.py` (use `python2.7` on Ubuntu 14.04)
-5. Atom editor: `sh atompkgs.sh` (uses Atom's `apm`)
+1. R: `Rscript -e rpkgs.R` (or in an R session)
+2. Python v3.4+: `python3 pypkgs.py` (use `python3.5` on Ubuntu 14.04)
+3. Python v2.7+: `python2 pypkgs.py` (use `python2.7` on Ubuntu 14.04)
+4. Julia: `julia juliapkgs.jl`
+5. Atom: `sh atompkgs.sh`
 
 __N.B.__, to install packages for R, it is best to avoid permissions issues by
 running the install script interactively in an R session started from the
-terminal (_in particular, use of `R CMD BATCH` is __not__ recommended_).
+terminal (_in particular, use of `R CMD BATCH` is **not** recommended_).
 `Rscript` seems to work well (as of 15 June 2016), but this functionality has
-not yet been verified as reliable.
+not yet been verified as being completely reliable.
 
 ---
 
 ## _Caveat Emptor_
 
-__The following information is current as of _27 August 2016_ and should be
-taken into account when following the recommended install procedure above.__
+_The following information is current as of **27 August 2016** and should be
+taken into account when following the recommended install procedure above._
 
 * On macOS, the "system Python" is Python 2.6.6 and is symlinked as `python`.
     After installation of newer versions of Python (preferably, via
@@ -70,10 +70,11 @@ taken into account when following the recommended install procedure above.__
 __N.B.__, for these scripts to work as intended, _base installations of the
 relevant tools must be performed in advance:_
 
-1. For macOS setup: [nhejazi/macOS-fresh](https://github.com/nhejazi/macOS-fresh)
+1. Setup for _macOS_:
+    __[nhejazi/macOS-fresh](https://github.com/nhejazi/macOS-fresh)__
 
-2. For Linux Ubuntu (14.04+) setup:
-    [nhejazi/ubuntu-fresh](https://github.com/nhejazi/ubuntu-fresh)
+2. Setup for _Ubuntu (14.04+)_:
+    __[nhejazi/ubuntu-fresh](https://github.com/nhejazi/ubuntu-fresh)__
 
 ---
 
