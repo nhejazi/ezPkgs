@@ -13,22 +13,18 @@ cran_pkgs <- c("Rcpp", "RcppEigen", "plyr", "dplyr", "pryr", "tidyr",
                "shiny", "elasticnet", "stargazer", "h2o", "sparklyr"
               )
 
-bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb",
-               "limma", "BiocParallel", "rtracklayer", "biomaRt",
-               "GenomicAlignments", "edgeR", "VariantAnnotation",
-               "multtest", "impute", "affy", "rhdf5", "pcaMethods",
-               "Heatplus", "gwascat", "marray", "EDASeq", "oligo",
-               "aroma.light", "DESeq2", "ShortRead", "Rgraphviz",
-               "Gviz", "hopach", "bumphunter", "minfi", "bsseq",
-               "AnnotationHub", "pachterlab/sleuth"
+bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb", "biomaRt",
+               "BiocParallel", "rtracklayer", "GenomicAlignments", "multtest",
+               "VariantAnnotation", "impute", "affy", "rhdf5", "pcaMethods",
+               "Heatplus", "gwascat", "marray", "EDASeq", "oligo", "limma",
+               "aroma.light", "ShortRead", "Rgraphviz", "Gviz", "hopach",
+               "bumphunter", "minfi", "AnnotationHub"
               )
 
 github_pkgs <- c("ramnathv/slidify", "ramnathv/slidifyLibraries",
-                 "ramnathv/htmlwidgets", "jennybc/googlesheets",
-                 "ecpolley/SuperLearner", "ledell/subsemble",
-                 "davidgohel/ggiraph", "dgrtwo/gganimate",
-                 "rstudio/bookdown", "karthik/wesanderson",
-                 "dgrtwo/broom", "jimhester/covr", "jalvesaq/colorout"
+                 "ramnathv/htmlwidgets", "jalvesaq/colorout", "dgrtwo/broom",
+                 "ecpolley/SuperLearner", "rstudio/bookdown", "jimhester/covr",
+                 "karthik/wesanderson", "yihui/xaringan"
                 )
 
 # put all packages in a common folder (prevents R version issues)
