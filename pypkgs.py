@@ -27,7 +27,8 @@ stat_core = ('numpy', 'scipy', 'pandas', 'sympy', 'scikit-learn', 'statsmodels',
 extras = ('altair', 'ggplot', 'plotly', 'bokeh', 'mlxtend', 'csvkit',
           'biopython', 'nibabel', 'nipy')
 
-py3only = ('jupyter', 'awscli', 'neovim', 'jedi', 'xonsh', 'gitsome')
+py3only = ('jupyter', 'awscli', 'neovim', 'jedi',
+           'xonsh[ptk,proctitle]', 'gitsome')
 
 if __name__ == '__main__':
     # pip install listed packages
