@@ -1,3 +1,5 @@
+#!/usr/bin/env Rscript
+
 # lists of packages to install, organized by repository
 cran_pkgs <- c("Rcpp", "RcppEigen", "plyr", "dplyr", "pryr", "tidyr",
                "lintr", "knitr", "RCurl", "purrr", "ggplot2", "car",

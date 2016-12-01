@@ -1,3 +1,5 @@
+#!/usr/bin/env julia
+
 #= install Julia packages and iJulia kernel for Jupyter
 Thematic lists of packages useful for a variety of core scientific computing tasks,
 including loops to install all packages iteratively using Julia's package manager.
