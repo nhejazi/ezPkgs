@@ -3,7 +3,9 @@
 > Set up Jupyter kernels for languages common in statistics and data science
 > (e.g., R, Julia, Python 3, Python 2)
 
-## Using the Jupyter notebook with multiple kernels
+---
+
+## Multiple kernels for Jupyter notebooks
 - After installation, all of the desired kernels can be accessed from the
     browser:
 
@@ -22,7 +24,7 @@
 
 ---
 
-## [Kernels for Python 2 vs. 3](https://ipython.readthedocs.org/en/latest/install/kernel_install.html)
+## [Kernels for Python 2 vs. Python 3](https://ipython.readthedocs.org/en/latest/install/kernel_install.html)
 
 - Set up Jupyter and the notebook interface by running`pip3 install jupyter`.
   (If you want to set this up in Python2, use `pip2` or `pip` instead; just
