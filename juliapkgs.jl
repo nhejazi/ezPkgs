@@ -10,8 +10,8 @@ pkgs_progs = ["IJulia", "Blink", "Compat", "Homebrew", "FileIO", "MacroTools",
               "Lint", "Lazy", "Cairo", "RCall", "PyCall"]
 
 # packages for data science and data visualization
-pkgs_datas = ["DataArrays", "DataFrames", "Gadfly", "Winston", "PyPlot",
-              "Plotly", "Bokeh"]
+pkgs_datas = ["DataArrays", "DataFrames", "Plots", "Gadfly", "Winston",
+              "PyPlot", "Plotly", "Bokeh"]
 
 # packages for statistics and machine learning
 pkgs_stats = ["StatsBase", "Distributions", "Distances", "MultivariateStats",
