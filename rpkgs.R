@@ -10,9 +10,8 @@ cran_pkgs <- c("Rcpp", "RcppEigen", "plyr", "dplyr", "pryr", "tidyr",
                "randomForest", "e1071", "multcomp", "caret", "ggvis",
                "plotly", "mgcv", "rmarkdown", "gridExtra", "xgboost",
                "ProjectTemplate", "scatterplot3d", "profvis", "tmle",
-               "R.devices", "future", "selectiveInference", "rbokeh",
-               "gaussfacts", "rmsfact", "rfoaas", "dtplyr", "tibble",
-               "shiny", "elasticnet", "stargazer", "h2o", "sparklyr"
+               "R.devices", "future", "tibble", "shiny", "sparklyr",
+               "rbokeh", "dtplyr", "elasticnet", "stargazer", "h2o"
               )
 
 bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb", "biomaRt",
@@ -27,7 +26,7 @@ github_pkgs <- c("krlmlr/here", "ramnathv/slidify", "ramnathv/slidifyLibraries",
                  "ramnathv/htmlwidgets", "jalvesaq/colorout", "dgrtwo/broom",
                  "ecpolley/SuperLearner", "rstudio/bookdown", "jimhester/covr",
                  "karthik/wesanderson", "yihui/xaringan", "njtierney/naniar",
-                 "richfitz/remake"
+                 "richfitz/remake", "hadley/pkgdown"
                 )
 
 # put all packages in a common folder (prevents R version issues)
