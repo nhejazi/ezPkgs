@@ -26,7 +26,7 @@ github_pkgs <- c("krlmlr/here", "ramnathv/slidify", "ramnathv/slidifyLibraries",
                  "ramnathv/htmlwidgets", "jalvesaq/colorout", "dgrtwo/broom",
                  "ecpolley/SuperLearner", "rstudio/bookdown", "jimhester/covr",
                  "karthik/wesanderson", "yihui/xaringan", "njtierney/naniar",
-                 "richfitz/remake", "hadley/pkgdown"
+                 "richfitz/remake", "hadley/pkgdown", "gaborcsardi/prompt"
                 )
 
 # put all packages in a common folder (prevents R version issues)
