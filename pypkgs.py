@@ -19,17 +19,16 @@ def upgrade(packages):
 
 
 # Categorized list of packages for installation
-essentials = ('ipython', 'Pillow', 'virtualenv', 'nose', 'pylint',
-              'matplotlib')
+essentials = ('ipython', 'Pillow', 'virtualenv', 'nose', 'pylint', 'numpy',
+              'matplotlib', 'pandas')
 
-stat_core = ('numpy', 'scipy', 'pandas', 'sympy', 'scikit-learn',
-             'statsmodels', 'seaborn', 'pymc', 'pylab', 'nltk', 'q',
-             'snakeviz', 'networkx')
+stat_core = ('scipy', 'scikit-learn', 'statsmodels', 'seaborn', 'pymc', 'pylab',
+             'sympy', 'nltk', 'q', 'snakeviz', 'networkx')
 
 extras = ('altair', 'ggplot', 'plotly', 'bokeh', 'mlxtend', 'csvkit',
           'biopython', 'nibabel', 'nipy')
 
-py3only = ('jupyter', 'jupyterthemes', 'awscli', 'neovim', 'jedi',
+py3only = ('jupyter', 'jupyterthemes', 'awscli', 'neovim', 'jedi', 'gitless',
            'xonsh[ptk,proctitle]', 'gitsome')
 
 if __name__ == '__main__':
