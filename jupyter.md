@@ -51,6 +51,19 @@
 - _(Update 2016 Jun.):_ Instructions for setting up multiple Python kernels have
     been added to the [documentation
     here](https://ipython.readthedocs.io/en/stable/install/kernel_install.html).
+ 
+- __(Error 2017 Jan.):__ The move from Python 3.5X to 3.6X caused Jupyter kernels
+    for Python3 and Python2 to break. The easiest workaround to restore kernel
+    functionality appears to be re-running the kernel installation lines:
+    ```bash
+    # restore Python2 kernel
+    python2 -m pip install ipykernel
+    python2 -m ipykernel install --user
+     
+    # install Python3 kernel (even though Jupyter installed via pip3...)
+    python3 -m pip install ipykernel
+    python3 -m ipykernel install --user
+    ```
 
 ---
 
