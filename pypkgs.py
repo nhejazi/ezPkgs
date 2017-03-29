@@ -29,7 +29,7 @@ extras = ('altair', 'ggplot', 'plotly', 'bokeh', 'mlxtend', 'csvkit',
           'biopython', 'nibabel', 'nipy')
 
 py3only = ('jupyter', 'jupyterthemes', 'awscli', 'neovim', 'jedi', 'gitless',
-           'xonsh[ptk,proctitle]', 'gitsome', 'yapf')
+           'xonsh[ptk,pygments,proctitle]', 'gitsome', 'yapf')
 
 if __name__ == '__main__':
     # install only bare minimum on all Python versions
