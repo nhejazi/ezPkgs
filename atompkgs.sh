@@ -27,6 +27,7 @@ apm install linter-clang linter-pylint linter-lintr linter-lua
 ## auto-install on macOS; manually install for Linux machines if desired
 if [ `uname` == "Darwin" ]; then
   apm install atom-beautify # doesn't work on Chromebook Ubuntu...
+  apm install jupyter-notebook # open and execute ".ipynb" files
   apm install uber-juno # Juno, the IDE for the Julia language
   apm install atomify # integrate with Spotify
 fi

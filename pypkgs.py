@@ -28,8 +28,8 @@ stat_core = ('pandas', 'scipy', 'scikit-learn', 'statsmodels', 'seaborn',
 extras = ('altair', 'ggplot', 'plotly', 'bokeh', 'mlxtend', 'csvkit',
           'biopython', 'nibabel', 'nipy')
 
-py3only = ('jupyter', 'jupyterthemes', 'awscli', 'neovim', 'jedi', 'gitless',
-           'xonsh[ptk,pygments,proctitle]', 'gitsome', 'yapf')
+py3only = ('jupyter', 'jupyterthemes', 'jupyter_kernel_gateway', 'jedi', 'yapf',
+           'awscli', 'neovim', 'gitless', 'xonsh[ptk,pygments]', 'gitsome')
 
 if __name__ == '__main__':
     # install only bare minimum on all Python versions
