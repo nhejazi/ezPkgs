@@ -8,11 +8,12 @@ if [ `uname` == "Linux" ]; then
 fi
 
 ## core packages to improve productivity
-apm install pigments linter highlight-selected file-icons atom-clock pdf-view
-apm install git-plus git-time-machine merge-conflicts color-picker zentabs
-apm install markdown-preview-plus linter-write-good scroll-through-time
-apm install vim-mode platformio-ide-terminal script hydrogen r-exec
-apm install seti-ui seti-syntax  # finally, a beautiful dark theme
+apm install pigments linter highlight-selected file-icons zentabs atom-clock
+apm install git-plus git-time-machine merge-conflicts color-picker
+apm install scroll-through-time linter-write-good hey-pane
+apm install markdown-preview-plus pdf-view preview-inline
+apm install vim-mode script hydrogen r-exec
+apm install nord-atom-ui nord-atom-syntax
 
 ## packages to add some extra functionality to the minimap
 apm install minimap minimap-highlight-selected minimap-find-and-replace
@@ -26,8 +27,13 @@ apm install linter-clang linter-pylint linter-lintr linter-lua
 
 ## auto-install on macOS; manually install for Linux machines if desired
 if [ `uname` == "Darwin" ]; then
-  apm install atom-beautify # doesn't work on Chromebook Ubuntu...
-  apm install jupyter-notebook # open and execute ".ipynb" files
-  apm install uber-juno # Juno, the IDE for the Julia language
-  apm install atomify # integrate with Spotify
+  apm install atom-beautify
+  apm install atomify
+fi
+
+## the Juno IDE for the Julia language
+if [[ `julia -v` ]]; then
+  apm install uber-juno
+else
+  :
 fi
