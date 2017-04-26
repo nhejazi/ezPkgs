@@ -25,10 +25,9 @@ bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb", "biomaRt",
 
 github_pkgs <- c("krlmlr/here", "ramnathv/slidify", "ramnathv/slidifyLibraries",
                  "ramnathv/htmlwidgets", "jalvesaq/colorout", "dgrtwo/broom",
-                 "ecpolley/SuperLearner", "rstudio/bookdown", "jimhester/covr",
-                 "karthik/wesanderson", "yihui/xaringan", "njtierney/naniar",
-                 "richfitz/remake", "hadley/pkgdown", "gaborcsardi/prompt",
-                 "tjmahr/WrapRmd"
+                 "ecpolley/SuperLearner", "rstudio/bookdown", "hadley/pkgdown",
+                 "karthik/wesanderson", "yihui/xaringan", "richfitz/remake",
+                 "jimhester/covr", "yihui/servr", "hafen/rmote"
                 )
 
 # put all packages in a common folder (prevents R version issues)
