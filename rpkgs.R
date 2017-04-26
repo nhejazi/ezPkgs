@@ -12,22 +12,23 @@ cran_pkgs <- c("Rcpp", "RcppEigen", "plyr", "dplyr", "pryr", "tidyr",
                "ProjectTemplate", "scatterplot3d", "profvis", "tmle",
                "R.devices", "future", "tibble", "shiny", "sparklyr",
                "rbokeh", "dtplyr", "elasticnet", "stargazer", "h2o",
-               "rdrop2", "bartMachine", "ranger", "fst"
+               "rdrop2", "bartMachine", "ranger", "Rtsne", "fst"
               )
 
 bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb", "biomaRt",
                "BiocParallel", "rtracklayer", "GenomicAlignments", "multtest",
                "VariantAnnotation", "impute", "affy", "rhdf5", "pcaMethods",
-               "Heatplus", "gwascat", "marray", "EDASeq", "oligo", "limma",
-               "aroma.light", "ShortRead", "Rgraphviz", "Gviz", "hopach",
-               "bumphunter", "minfi", "AnnotationHub"
+               "Heatplus", "gwascat", "marray", "oligo", "hopach", "limma",
+               "ShortRead", "AnnotationHub", "SummarizedExperiment", "Gviz",
+               "Rgraphviz", "minfi", "bumphunter", "DESeq2", "edgeR", "scater",
+               "scran", "SC3"
               )
 
 github_pkgs <- c("krlmlr/here", "ramnathv/slidify", "ramnathv/slidifyLibraries",
-                 "ramnathv/htmlwidgets", "jalvesaq/colorout", "dgrtwo/broom",
-                 "ecpolley/SuperLearner", "rstudio/bookdown", "hadley/pkgdown",
-                 "karthik/wesanderson", "yihui/xaringan", "richfitz/remake",
-                 "jimhester/covr", "yihui/servr", "hafen/rmote"
+                 "ramnathv/htmlwidgets", "jalvesaq/colorout", "hadley/pkgdown",
+                 "rstudio/bookdown", "ecpolley/SuperLearner", "jimhester/covr",
+                 "karthik/wesanderson", "yihui/xaringan", "rlbarter/superheat",
+                 "tidyverse/broom", "yihui/servr", "cloudyr/rmote"
                 )
 
 # put all packages in a common folder (prevents R version issues)
