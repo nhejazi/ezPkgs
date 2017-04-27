@@ -21,7 +21,7 @@ bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb", "biomaRt",
                "Heatplus", "gwascat", "marray", "oligo", "hopach", "limma",
                "ShortRead", "AnnotationHub", "SummarizedExperiment", "Gviz",
                "Rgraphviz", "minfi", "bumphunter", "DESeq2", "edgeR", "scater",
-               "scran", "SC3"
+               "scran", "SC3", "clusterExperiment"
               )
 
 github_pkgs <- c("krlmlr/here", "ramnathv/slidify", "ramnathv/slidifyLibraries",
