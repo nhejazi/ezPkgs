@@ -12,7 +12,8 @@ cran_pkgs <- c("Rcpp", "RcppEigen", "plyr", "dplyr", "pryr", "tidyr",
                "ProjectTemplate", "scatterplot3d", "profvis", "tmle",
                "R.devices", "future", "tibble", "shiny", "sparklyr",
                "rbokeh", "dtplyr", "elasticnet", "stargazer", "h2o",
-               "rdrop2", "bartMachine", "ranger", "Rtsne", "fst"
+               "rdrop2", "dbplyr", "bartMachine", "ranger", "Rtsne",
+               "fst", "prophet", "timekit", "tidyquant"
               )
 
 bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb", "biomaRt",
