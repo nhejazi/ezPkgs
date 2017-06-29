@@ -31,7 +31,7 @@ biosci = ('biopython', 'nibabel', 'nipy')
 
 newOnly = ('jupyter', 'jupyterthemes', 'jupyter_kernel_gateway', 'jedi', 'yapf',
            'awscli', 'neovim', 'gitless', 'dask', 'distributed', 'xonsh',
-           'gitsome')
+           'gitsome', 'visidata')
 
 if __name__ == '__main__':
     # install only bare minimum on all Python versions
