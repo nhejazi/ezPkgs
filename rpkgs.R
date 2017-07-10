@@ -29,7 +29,8 @@ github_pkgs <- c("krlmlr/here", "ramnathv/slidify", "ramnathv/slidifyLibraries",
                  "ramnathv/htmlwidgets", "jalvesaq/colorout", "hadley/pkgdown",
                  "rstudio/bookdown", "ecpolley/SuperLearner", "jimhester/covr",
                  "karthik/wesanderson", "yihui/xaringan", "rlbarter/superheat",
-                 "tidyverse/broom", "yihui/servr", "cloudyr/rmote"
+                 "tidyverse/broom", "yihui/servr", "cloudyr/rmote",
+                 "ThinkRstat/fcuk"
                 )
 
 # put all packages in a common folder (prevents R version issues)
