@@ -1,14 +1,14 @@
 #!/usr/bin/env Rscript
 
 # lists of packages to install, organized by repository
-cran_pkgs <- c("Rcpp", "RcppEigen", "plyr", "pryr", "lintr", "knitr", "RCurl",
-               "car", "xtable", "pander", "foreign", "data.table", "nlme",
-               "lme4", "roxygen2", "littler", "ggthemes", "DBI", "yaml",
-               "fastICA", "statmod", "glmnet", "mlr", "randomForest", "e1071",
-               "multcomp", "caret", "ggvis", "plotly", "mgcv", "gridExtra",
-               "xgboost", "ProjectTemplate", "scatterplot3d", "profvis", "tmle",
-               "future", "rbokeh", "elasticnet", "stargazer", "h2o", "rdrop2",
-               "bartMachine", "ranger", "Rtsne", "fst", "prophet"
+cran_pkgs <- c("Rcpp", "RcppArmadillo", "RcppEigen", "Rcereal", "BH", "pryr",
+               "lintr", "knitr", "RCurl", "car", "xtable", "pander", "foreign",
+               "data.table", "nlme", "lme4", "roxygen2", "littler", "ggthemes",
+               "DBI", "yaml", "fastICA", "statmod", "glmnet", "randomForest",
+               "e1071", "multcomp", "caret", "mlr", "ggvis", "plotly", "mgcv",
+               "gridExtra", "xgboost", "ProjectTemplate", "scatterplot3d",
+               "profvis", "tmle", "future", "doFuture", "rbokeh", "elasticnet",
+               "h2o", "rdrop2", "ranger", "Rtsne", "fst", "prophet"
               )
 
 bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb", "biomaRt",
@@ -20,7 +20,7 @@ bioc_pkgs <- c("GenomicRanges", "GenomicFeatures", "GenomeInfoDb", "biomaRt",
                "scran", "SC3", "clusterExperiment"
               )
 
-github_pkgs <- c("business-science/timekit", "business-science/tidyquant",
+github_pkgs <- c("business-science/timetk", "business-science/tidyquant",
                  "cloudyr/rmote", "ecpolley/SuperLearner", "gaborcsardi/prompt",
                  "jalvesaq/colorout", "jimhester/covr",  "karthik/wesanderson",
                  "krlmlr/here", "krlmlr/styler", "nhejazi/nima",

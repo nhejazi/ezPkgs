@@ -23,7 +23,7 @@ essentials = ('ipython', 'Pillow', 'virtualenv', 'nose', 'pylint', 'numpy')
 
 stat_core = ('matplotlib', 'pandas', 'scipy', 'scikit-learn', 'seaborn',
              'statsmodels', 'pymc', 'pylab', 'sympy', 'nltk', 'q', 'snakeviz',
-             'networkx')
+             'networkx', 'tensorflow', 'keras')
 
 extras = ('altair', 'ggplot', 'plotly', 'bokeh', 'mlxtend', 'csvkit')
 
