@@ -24,6 +24,7 @@ apm install language-r language-julia language-scala language-lua
 apm install language-markdown language-latex latex-autocomplete
 apm install autocomplete-clang autocomplete-python autocomplete-r
 apm install linter-clang linter-pylint linter-lintr linter-lua
+apm install gpp-compiler
 
 ## auto-install on macOS; manually install for Linux machines if desired
 if [ `uname` == "Darwin" ]; then
