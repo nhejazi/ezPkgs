@@ -27,9 +27,7 @@ core = ('matplotlib', 'pandas', 'numba', 'scipy', 'scikit-learn', 'seaborn',
         'plotly', 'bokeh', 'mlxtend', 'csvkit', 'dask', 'distributed')
 
 extra = ('jupyter', 'jupyterthemes', 'jupyter_kernel_gateway', 'jedi', 'yapf',
-         'awscli', 'neovim', 'gitless', 'xonsh', 'gitsome', 'visidata')
-
-biosci = ('biopython', 'nibabel', 'nipy')
+         'awscli', 'neovim', 'gitless', 'xonsh', 'gitsome')
 
 
 if __name__ == '__main__':
