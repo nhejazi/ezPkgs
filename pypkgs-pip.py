@@ -26,8 +26,8 @@ core = ('matplotlib', 'pandas', 'numba', 'scipy', 'scikit-learn', 'seaborn',
         'networkx', 'tensorflow', 'keras', 'torchvision', 'altair', 'ggplot',
         'plotly', 'bokeh', 'mlxtend', 'csvkit', 'dask', 'distributed')
 
-extra = ('jupyter', 'jupyterthemes', 'jupyter_kernel_gateway', 'jedi', 'yapf',
-         'awscli', 'neovim', 'gitless', 'xonsh', 'gitsome')
+extra = ('jupyter', 'jupyterlab', 'jupyter_kernel_gateway', 'jedi', 'yapf',
+         'awscli', 'neovim', 'gitless', 'xonsh', 'gitsome', 'rtichoke')
 
 
 if __name__ == '__main__':
