@@ -62,22 +62,9 @@ taken into account when following the recommended install procedure above._
 
 ---
 
-## Related
-
-__N.B.__, for these scripts to work as intended, _base installations of the
-relevant tools must be performed in advance:_
-
-1. Setup for _macOS_:
-    __[nhejazi/macOS-fresh](https://github.com/nhejazi/macOS-fresh)__
-
-2. Setup for _Ubuntu (14.04+)_:
-    __[nhejazi/ubuntu-fresh](https://github.com/nhejazi/ubuntu-fresh)__
-
----
-
 ## License
 
-&copy; 2016-2017 [Nima Hejazi](http://nimahejazi.org)
+&copy; 2016-2018 [Nima Hejazi](https://nimahejazi.org)
 
 The contents of this repository are distributed under the MIT license. See file
 `LICENSE` for details.
